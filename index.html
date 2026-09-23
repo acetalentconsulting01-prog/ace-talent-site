@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
 
-  <title>ACE Talent Consulting | Recruitment, Staffing & Workforce Solutions</title>
+  <title>
+    ACE Talent Consulting | Recruitment, Staffing & Workforce Solutions
+  </title>
 
   <meta
     name="description"
@@ -22,46 +27,49 @@
   >
 
   <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-  <!-- =========================
+
+  <!-- =====================================================
        HEADER
-       ========================= -->
+  ====================================================== -->
 
   <header id="hd">
 
-    <!-- Thin Blue/Navy Top Line -->
     <div class="top-line"></div>
 
     <div class="w hb">
 
       <!-- LOGO -->
+
       <a
-        href="#/"
-        class="logo"
-        aria-label="ACE Talent Consulting home"
-      >
-        <b>ACE</b> TALENT
-        <small>CONSULTING</small>
-      </a>
+  href="#/"
+  class="logo-image"
+  aria-label="ACE Talent Consulting home"
+>
+  <img
+    src="images/ace-talent-header-logo.png"
+    alt="ACE Talent Consulting"
+  >
+</a>
 
 
       <!-- NAVIGATION -->
+
       <nav id="nv" aria-label="Main">
 
         <ul>
 
-          <!-- HOME -->
           <li>
             <a class="t" href="#/">
               Home
             </a>
           </li>
 
-
-          <!-- ABOUT -->
           <li>
             <a class="t" href="#/about">
               About Us
@@ -69,7 +77,6 @@
           </li>
 
 
-          <!-- SERVICES -->
           <li class="dd">
 
             <a class="t" href="#/services">
@@ -78,13 +85,12 @@
 
             <div
               class="menu"
-              id="mS"
-            ></div>
+              id="mS">
+            </div>
 
           </li>
 
 
-          <!-- INDUSTRIES -->
           <li class="dd">
 
             <a class="t" href="#/industries">
@@ -93,25 +99,33 @@
 
             <div
               class="menu"
-              id="mI"
-            ></div>
+              id="mI">
+            </div>
 
           </li>
 
 
-          <!-- CAREERS -->
           <li>
-            <a class="t" href="#/careers">
+
+            <a
+              class="t"
+              href="#/candidates"
+            >
               Careers
             </a>
+
           </li>
 
 
-          <!-- FIND A JOB -->
           <li>
-            <a class="t" href="#/jobs">
+
+            <a
+              class="t"
+              href="#/jobs"
+            >
               Find a Job
             </a>
+
           </li>
 
         </ul>
@@ -119,10 +133,10 @@
       </nav>
 
 
-      <!-- RIGHT SIDE BUTTONS -->
+      <!-- HEADER BUTTONS -->
+
       <div class="ha">
 
-        <!-- HIRE TALENT -->
         <a
           class="btn b1"
           href="#/employers"
@@ -131,16 +145,14 @@
         </a>
 
 
-        <!-- CONTACT US -->
         <a
-          class="btn contact-btn"
+          class="btn b4"
           href="#/contact"
         >
           Contact Us
         </a>
 
 
-        <!-- MOBILE MENU -->
         <button
           class="bg"
           id="bg"
@@ -157,64 +169,451 @@
   </header>
 
 
-  <!-- =========================
-       MAIN APP
-       ========================= -->
+
+  <!-- =====================================================
+       MAIN WEBSITE APP
+  ====================================================== -->
 
   <main id="app"></main>
 
 
-  <!-- =========================
-       FOOTER
-       ========================= -->
 
-  <footer>
+  <!-- =====================================================
+       HIRING REQUIREMENTS POPUP
+  ====================================================== -->
 
-    <div class="w">
+  <div
+    id="hiringPopup"
+    class="hiring-popup"
+  >
 
-      <div
-        class="fc"
-        id="ft"
-      ></div>
+    <!-- OVERLAY -->
 
-
-      <div class="fb">
-
-        <span>
-          © 2026 ACE TALENT CONSULTING. All Rights Reserved.
-        </span>
+    <div
+      class="hiring-overlay"
+      id="hiringOverlay"
+    ></div>
 
 
-        <span>
+    <!-- POPUP BOX -->
 
-          <a
-            style="display:inline"
-            href="#/privacy"
+    <div class="hiring-modal">
+
+
+      <!-- CLOSE -->
+
+      <button
+        type="button"
+        class="hiring-close"
+        id="hiringClose"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+
+      <!-- HEADER -->
+
+      <div class="hiring-header">
+
+
+        <div class="hiring-header-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
           >
-            Privacy Policy
-          </a>
 
-          &nbsp;·&nbsp;
+            <path
+              d="M12 2a7 7 0 0 0-7 7v3a3 3 0 0 0-3 3v1h6v-4H5V9a7 7 0 0 1 14 0v3h-3v4h6v-1a3 3 0 0 0-3-3V9a7 7 0 0 0-7-7Z"
+            />
 
-          <a
-            style="display:inline"
-            href="#/terms"
-          >
-            Terms &amp; Conditions
-          </a>
+            <path d="M9 20h6v2H9z"/>
 
-        </span>
+          </svg>
+
+        </div>
+
+
+        <div class="hiring-header-content">
+
+          <h2>
+            Send Hiring Requirements
+          </h2>
+
+
+          <div class="hiring-badge">
+
+            <span></span>
+
+            For Employers Looking to Hire Candidates.
+
+          </div>
+
+        </div>
 
       </div>
 
+
+
+      <!-- DIVIDER -->
+
+      <div class="hiring-divider"></div>
+
+
+
+      <!-- FORM -->
+
+      <form
+        id="hiringRequirementForm"
+        class="hiring-form"
+      >
+
+
+        <!-- ROW 1 -->
+
+        <div class="hiring-row">
+
+
+          <!-- CONTACT PERSON -->
+
+          <div class="hiring-field">
+
+            <label>
+              Contact Person Name
+              <em>*</em>
+            </label>
+
+
+            <div class="hiring-input-wrap">
+
+              <svg viewBox="0 0 24 24">
+
+                <path
+                  d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                />
+
+                <path
+                  d="M4 21a8 8 0 0 1 16 0"
+                />
+
+              </svg>
+
+
+              <input
+                type="text"
+                name="contact_name"
+                placeholder="Your full name"
+                required
+              >
+
+            </div>
+
+          </div>
+
+
+
+          <!-- COMPANY -->
+
+          <div class="hiring-field">
+
+            <label>
+              Company Name
+              <em>*</em>
+            </label>
+
+
+            <div class="hiring-input-wrap">
+
+              <svg viewBox="0 0 24 24">
+
+                <path d="M3 21h18"/>
+
+                <path
+                  d="M5 21V7l7-4 7 4v14"
+                />
+
+                <path
+                  d="M9 21v-5h6v5"
+                />
+
+              </svg>
+
+
+              <input
+                type="text"
+                name="company_name"
+                placeholder="Your company name"
+                required
+              >
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ROW 2 -->
+
+        <div class="hiring-row">
+
+
+          <!-- PHONE -->
+
+          <div class="hiring-field">
+
+            <label>
+              Phone Number
+              <em>*</em>
+            </label>
+
+
+            <div class="hiring-input-wrap">
+
+              <svg viewBox="0 0 24 24">
+
+                <path
+                  d="M6.5 3.5 9 3l2 5-2.5 1.5a16 16 0 0 0 6 6L16 13l5 2 .5 2.5A3 3 0 0 1 18.5 21C10 20 4 14 3 5.5A3 3 0 0 1 6.5 3.5Z"
+                />
+
+              </svg>
+
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="10-digit mobile number"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                required
+              >
+
+            </div>
+
+          </div>
+
+
+
+          <!-- EMAIL -->
+
+          <div class="hiring-field">
+
+            <label>
+              Email Address
+              <em>*</em>
+            </label>
+
+
+            <div class="hiring-input-wrap">
+
+              <svg viewBox="0 0 24 24">
+
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                />
+
+                <path
+                  d="m4 7 8 6 8-6"
+                />
+
+              </svg>
+
+
+              <input
+                type="email"
+                name="email"
+                placeholder="yourname@company.com"
+                required
+              >
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- PROFILE -->
+
+        <div class="hiring-field">
+
+          <label>
+            For Which Profile Are You Looking?
+            <em>*</em>
+          </label>
+
+
+          <div class="hiring-input-wrap">
+
+            <svg viewBox="0 0 24 24">
+
+              <rect
+                x="3"
+                y="7"
+                width="18"
+                height="14"
+                rx="2"
+              />
+
+              <path
+                d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+              />
+
+              <path
+                d="M3 12h18"
+              />
+
+              <path
+                d="M10 12v2h4v-2"
+              />
+
+            </svg>
+
+
+            <input
+              type="text"
+              name="profile"
+              placeholder="e.g. HR Manager, Developer, Accountant, Team Lead"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+
+        <!-- SUBMIT -->
+
+        <button
+          type="submit"
+          class="hiring-submit"
+        >
+
+          <svg viewBox="0 0 24 24">
+
+            <path
+              d="m3 20 18-8L3 4l3 7 8 1-8 1-3 7Z"
+            />
+
+          </svg>
+
+          Send Hiring Requirements
+
+        </button>
+
+
+
+        <!-- TRUST -->
+
+        <div class="hiring-trust">
+
+          <span>
+
+            <svg viewBox="0 0 24 24">
+
+              <rect
+                x="5"
+                y="10"
+                width="14"
+                height="11"
+                rx="2"
+              />
+
+              <path
+                d="M8 10V7a4 4 0 0 1 8 0v3"
+              />
+
+            </svg>
+
+            100% Confidential
+
+          </span>
+
+
+          <i></i>
+
+
+          <span>
+
+            <svg viewBox="0 0 24 24">
+
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+              />
+
+              <path
+                d="M12 7v5l3 2"
+              />
+
+            </svg>
+
+            Reply in 2 hrs
+
+          </span>
+
+
+          <i></i>
+
+
+          <span>
+
+            <svg viewBox="0 0 24 24">
+
+              <path
+                d="M12 3 20 6v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-3Z"
+              />
+
+              <path
+                d="m9 12 2 2 4-4"
+              />
+
+            </svg>
+
+            No Advance Payment
+
+          </span>
+
+        </div>
+
+
+      </form>
+
     </div>
 
-  </footer>
+  </div>
 
 
-  <!-- =========================
-       JAVASCRIPT FILES
-       ========================= -->
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer id="site-footer">
+
+  <div class="w">
+
+    <div id="ft"></div>
+
+  </div>
+
+</footer>
+
+
+
+  <!-- =====================================================
+       EXISTING JAVASCRIPT FILES
+  ====================================================== -->
 
   <script src="js/data.js"></script>
 
@@ -225,67 +624,210 @@
   <script src="js/app.js"></script>
 
 
-  <!-- =========================
-       HEADER EXTRA STYLING
-       ========================= -->
+
+  <!-- =====================================================
+       HIRING POPUP JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+
+        const popup =
+          document.getElementById("hiringPopup");
+
+
+        const closeBtn =
+          document.getElementById("hiringClose");
+
+
+        const overlay =
+          document.getElementById("hiringOverlay");
+
+
+        const form =
+          document.getElementById(
+            "hiringRequirementForm"
+          );
+
+
+        /* -----------------------------------------------
+           OPEN POPUP
+        ------------------------------------------------ */
+
+        function openHiringPopup() {
+
+          popup.classList.add("active");
+
+          document.body.classList.add(
+            "hiring-popup-open"
+          );
+
+        }
+
+
+        /* -----------------------------------------------
+           CLOSE POPUP
+        ------------------------------------------------ */
+
+        function closeHiringPopup() {
+
+          popup.classList.remove("active");
+
+          document.body.classList.remove(
+            "hiring-popup-open"
+          );
+
+        }
+
+
+        /* -----------------------------------------------
+           CLOSE BUTTON
+        ------------------------------------------------ */
+
+        closeBtn.addEventListener(
+          "click",
+          closeHiringPopup
+        );
+
+
+        /* -----------------------------------------------
+           CLICK OUTSIDE
+        ------------------------------------------------ */
+
+        overlay.addEventListener(
+          "click",
+          closeHiringPopup
+        );
+
+
+        /* -----------------------------------------------
+           ESC KEY
+        ------------------------------------------------ */
+
+        document.addEventListener(
+          "keydown",
+          function (event) {
+
+            if (event.key === "Escape") {
+
+              closeHiringPopup();
+
+            }
+
+          }
+        );
+
+
+        /* -----------------------------------------------
+           OPEN WHEN WEBSITE LOADS
+        ------------------------------------------------ */
+
+        setTimeout(
+  openHiringPopup,
+  2500
+);
+
+
+        /* -----------------------------------------------
+           OPEN EVERY 40 SECONDS
+        ------------------------------------------------ */
+
+        setInterval(
+          function () {
+
+            openHiringPopup();
+
+          },
+          30000
+        );
+
+
+        
+
+
+      }
+    );
+
+  </script>
+
+
+
+  <!-- =====================================================
+       TOP LINE
+  ====================================================== -->
 
   <style>
 
-    /* TOP BLUE LINE */
-    #hd .top-line {
-      width: 100%;
-      height: 7px;
+  #hd .top-line {
+    width: 100%;
+    height: 1px;
+    background: #1f5bff;
+    opacity: .35;
+  }
 
-      background: linear-gradient(
-        90deg,
-        #0a1a3f 0%,
-        #1f5bff 50%,
-        #0a1a3f 100%
-      );
+
+  /* =========================
+     ACE TALENT LOGO
+     ========================= */
+
+  .logo-image {
+    display: flex;
+    align-items: center;
+    width: 245px;
+    height: 76px;
+    text-decoration: none;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .logo-image img {
+    display: block;
+    width: 245px;
+    height: 84px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+
+  /* =========================
+     MOBILE LOGO
+     ========================= */
+
+  @media (max-width: 900px) {
+
+    .logo-image {
+      width: 185px;
+      height: 64px;
     }
 
-
-    /* HEADER BUTTON AREA */
-    #hd .ha {
-      display: flex;
-      align-items: center;
-      gap: 8px;
+    .logo-image img {
+      width: 185px;
+      height: 68px;
     }
 
+  }
 
-    /* CONTACT BUTTON */
-    #hd .contact-btn {
-      background: #0a1a3f;
-      color: #ffffff;
-      border: 2px solid #0a1a3f;
+
+  @media (max-width: 520px) {
+
+    .logo-image {
+      width: 155px;
+      height: 58px;
     }
 
-
-    #hd .contact-btn:hover {
-      background: #1f5bff;
-      border-color: #1f5bff;
-      color: #ffffff;
+    .logo-image img {
+      width: 155px;
+      height: 60px;
     }
 
+  }
 
-    /* BUTTON SIZE */
-    #hd .ha .btn {
-      min-height: 42px;
-      padding: 0 17px;
-      font-size: 0.88rem;
-    }
+</style>
 
-
-    /* MOBILE */
-    @media (max-width: 980px) {
-
-      #hd .contact-btn {
-        display: none;
-      }
-
-    }
-
-  </style>
 
 </body>
 

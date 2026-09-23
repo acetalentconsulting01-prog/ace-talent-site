@@ -11,9 +11,18 @@ const sh = (e, t, s = "", c = "") =>
 
 const ph = (h, ar = "4/3") =>
   `<div class="ph" style="--h:${h};--ar:${ar}" role="img" aria-label="Placeholder image"></div>`;
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeSSPkU-YQGsWQLM3k0j3ZLGtSlLb7lqPo0vARx1F0ZkCJoJQ/viewform?usp=pp_url";
+
+
+const jobApplyUrl = (job) =>
+  `${GOOGLE_FORM_URL}&entry.1678710412=${encodeURIComponent(job.t)}`;
+
+
+/* ================= JOB CARD ================= */
 
 const jc = j =>
   `<article class="card h jc rv">
+
     <div class="meta">
       <span class="pill">${j.type}</span>
       <span class="pill">${j.mode}</span>
@@ -22,38 +31,105 @@ const jc = j =>
 
     <h3>${j.t}</h3>
 
-    <p style="margin:0">Confidential client · ${j.loc}</p>
-    <p style="margin:0">${j.exp} · ${j.ind}</p>
+    ${
+      j.client
+        ? `<p style="margin:0;font-weight:600;color:var(--navy)">
+            Client: ${j.client}
+          </p>`
+        : ""
+    }
+
+    <p style="margin:0">${j.loc}</p>
+
+    <p style="margin:0">
+      ${j.exp} · ${j.ind}
+    </p>
 
     <div class="meta">
       ${j.sk.map(s =>
-        `<span class="pill" style="background:none;border:1px solid var(--line);color:var(--mut)">${s}</span>`
+        `<span
+          class="pill"
+          style="background:none;border:1px solid var(--line);color:var(--mut)"
+        >
+          ${s}
+        </span>`
       ).join("")}
     </div>
 
-    <div class="row" style="margin-top:8px">
-      <a class="btn b2" href="#/jobs/${j.id}">View Details</a>
-      <a class="btn b3" href="#/apply/${j.id}">Apply Now</a>
+    <div
+      class="row"
+      style="margin-top:8px;gap:8px;flex-wrap:wrap"
+    >
+
+      <a
+        class="btn b2"
+        href="#/jobs/${j.id}"
+      >
+        View Details
+      </a>
+
+      ${
+  (j.jdUrl || j["JD Document Link"])
+    ? `<a
+        class="btn b3"
+        href="${j.jdUrl || j["JD Document Link"]}"
+        target="_blank"
+        rel="noopener"
+      >
+        View Full JD
+      </a>`
+    : ""
+}
+
+      <a
+        class="btn b3"
+        href="${jobApplyUrl(j)}"
+        target="_blank"
+        rel="noopener"
+      >
+        Apply Now
+      </a>
+
     </div>
+
   </article>`;
+
+
+/* ================= CTA ================= */
 
 const ctaBlock = () =>
   `<section class="sec">
     <div class="w">
       <div class="cta rv">
+
         <h2>Let's find the right talent. Together.</h2>
+
         <p>
           Whether you're building a team or planning your next career move,
           ACE TALENT CONSULTING can help connect the right opportunity with the right talent.
         </p>
+
         <div class="row">
-          <a class="btn b1" href="#/employers">Hire Talent</a>
-          <a class="btn b3" href="#/jobs">Find a Job</a>
+
+          <a
+            class="btn b1"
+            href="#/employers"
+          >
+            Hire Talent
+          </a>
+
+          <a
+            class="btn b3"
+            href="#/jobs"
+          >
+            Find a Job
+          </a>
+
         </div>
+
       </div>
     </div>
   </section>`;
-
 const faq = () =>
   `<section class="sec alt">
     <div class="w" style="max-width:820px">
@@ -68,37 +144,123 @@ const faq = () =>
   </section>`;
 
 const searchBar = () =>
-  `<div class="sb">
+  `<div class="sb ace-premium-bar">
     <div class="w">
-      <form class="sf" id="jsf">
-        <div>
-          <label for="q">Search jobs</label>
-          <input id="q" placeholder="Job title, keyword or skill">
-        </div>
-        <div>
-          <label for="l">Location</label>
-          <input id="l" placeholder="City, state or location">
-        </div>
-        <div>
-          <label for="x">Experience</label>
-          <select id="x">
-            <option value="">Any experience</option>
-            ${EXP.map(x => `<option>${x}</option>`).join("")}
-          </select>
-        </div>
-        <div>
-          <label for="t">Job type</label>
-          <select id="t">
-            <option value="">Any job type</option>
-            ${YN.map(x => `<option>${x}</option>`).join("")}
-          </select>
-        </div>
-        <button class="btn b2" type="submit">Search Jobs</button>
-      </form>
 
-      <p style="text-align:right;margin:12px 4px 0">
-        <a href="#/jobs" style="color:var(--blue);font-weight:600">Browse all jobs →</a>
-      </p>
+      <div class="ace-premium-inner">
+
+        <!-- PITCH DECK -->
+        <div class="ace-premium-item">
+
+          <div class="ace-premium-icon ace-blue-icon">
+            <span>↓</span>
+          </div>
+
+          <div class="ace-premium-info">
+            <div class="ace-premium-label">
+              EXPLORE ACE TALENT CONSULTING
+            </div>
+
+            <a
+              href="documents/ACE-Talent-Consulting-Pitch-Deck.pdf"
+              target="_blank"
+              rel="noopener"
+              class="ace-premium-title"
+            >
+              Explore our company profile
+            </a>
+
+            <p>
+              Get insights into our vision, services,
+              industries and more.
+            </p>
+          </div>
+
+          <a
+            href="documents/ACE-Talent-Consulting-Pitch-Deck.pdf"
+            target="_blank"
+            rel="noopener"
+            class="ace-premium-arrow"
+          >
+            →
+          </a>
+
+        </div>
+
+
+        <!-- SERVICES -->
+        <div class="ace-premium-item">
+
+          <div class="ace-premium-icon ace-purple-icon">
+            <span>♧</span>
+          </div>
+
+          <div class="ace-premium-info">
+            <div class="ace-premium-label">
+              OUR RECRUITMENT EXPERTISE
+            </div>
+
+            <a
+              href="#/services"
+              class="ace-premium-title"
+            >
+              Recruitment, Staffing &amp; Workforce Solutions
+            </a>
+
+            <p>
+              Discover how we help businesses
+              build high-performing teams.
+            </p>
+          </div>
+
+          <a
+            href="#/services"
+            class="ace-premium-arrow"
+          >
+            →
+          </a>
+
+        </div>
+
+
+        <!-- WHATSAPP -->
+<div class="ace-premium-item ace-contact-item">
+
+  <div class="ace-premium-icon ace-green-icon">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor"
+        d="M20.5 3.5A11.94 11.94 0 0 0 12 0C5.37 0 .01 5.38.01 12c0 2.11.55 4.17 1.6 5.99L0 24l6.17-1.61A11.92 11.92 0 0 0 12 24c6.63 0 12-5.38 12-12 0-3.21-1.25-6.22-3.5-8.5ZM12 21.82c-1.82 0-3.61-.49-5.17-1.42l-.37-.22-3.66.96.98-3.57-.24-.37A9.78 9.78 0 0 1 2.18 12C2.18 6.58 6.59 2.18 12 2.18S21.82 6.58 21.82 12 17.41 21.82 12 21.82Zm5.39-7.34c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.46-.89-.8-1.49-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.41.25-.69.25-1.28.17-1.4-.08-.12-.27-.19-.57-.34Z"/>
+    </svg>
+  </div>
+
+  <div class="ace-premium-info">
+
+    <div class="ace-premium-label">
+      CONNECT WITH US
+    </div>
+
+    <a
+      href="https://wa.me/919833763399?text=Hello%20ACE%20Talent%20Consulting%2C%20I%20would%20like%20to%20discuss%20a%20recruitment%20or%20staffing%20requirement."
+      target="_blank"
+      rel="noopener"
+      class="ace-whatsapp-link"
+    >
+      <span>WhatsApp Us</span>
+      <b>→</b>
+    </a>
+
+    <div class="ace-whatsapp-number">
+      +91 9833763399
+    </div>
+
+    <p>
+      Chat with us on WhatsApp for quick assistance and support.
+    </p>
+
+  </div>
+
+</div>
+
     </div>
   </div>`;
 
@@ -218,6 +380,7 @@ const P = {
     </section>
 
     ${searchBar()}
+    
 
     <section class="sec">
       <div class="w">
@@ -571,49 +734,597 @@ const P = {
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="sec">
+        <!-- =====================================================
+         OUR FOUNDERS
+         ===================================================== -->
+
+    <section class="founders-section">
+
       <div class="w">
-        ${sh("Trusted by businesses", "What clients say", "Placeholder testimonials. Replace before launch.")}
-        <div class="grid g3">
-          ${TS.map(t =>
-            `<figure class="card rv" style="margin:0">
-              <p>“${t[2]}”</p>
-              <b>${t[0]}</b>
-              <br>
-              <span style="color:var(--mut)">${t[1]}</span>
-            </figure>`
-          ).join("")}
+
+        <!-- HEADER -->
+
+        <div class="founders-intro">
+
+          <div class="founders-intro-left">
+
+            <div class="eb">
+              OUR FOUNDERS
+            </div>
+
+            <h2>
+              Experience that
+              <span>shapes our approach.</span>
+            </h2>
+
+          </div>
+
+
+          <div class="founders-intro-right">
+
+            <p>
+              ACE Talent Consulting is shaped by experience across
+              banking, financial markets, technology, recruitment
+              and project management. Our founders bring different
+              professional perspectives together to build a more
+              informed and people-focused approach to talent.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="mq" style="margin-top:36px" aria-hidden="true">
-          <div class="mt">
-            ${Array.from({ length: 16 }, (_, i) =>
-              `<span>Client logo ${String(i % 8 + 1).padStart(2, "0")}</span>`
-            ).join("")}
+
+        <!-- FOUNDER 01 -->
+
+        <article class="founder-feature founder-feature-dark">
+
+          <div class="founder-number">
+            01
           </div>
+
+
+          <div class="founder-feature-grid">
+
+            <!-- LEFT -->
+
+            <div class="founder-profile">
+
+              <div class="founder-kicker">
+                FOUNDER
+              </div>
+
+              <h3>
+                Mahender Yogendra
+              </h3>
+
+              <p class="founder-position">
+                Founder • Banking &amp; Financial Markets
+              </p>
+
+
+              <div class="founder-highlight">
+
+                <div class="founder-highlight-number">
+                  18+
+                </div>
+
+                <div>
+                  <strong>
+                    Years of Industry Experience
+                  </strong>
+
+                  <span>
+                    Banking, financial markets, sales,
+                    marketing and wealth management.
+                  </span>
+                </div>
+
+              </div>
+
+
+              <div class="founder-statement">
+
+                <div class="statement-label">
+                  FOUNDER PERSPECTIVE
+                </div>
+
+                <p>
+                  Our vision is to build a recruitment and talent
+                  consulting organization that understands both
+                  business requirements and people. Experience across
+                  banking, financial markets, private wealth, NRI
+                  business and investment services has shaped our
+                  belief that successful hiring starts with understanding
+                  the business behind the role.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+
+            <div class="founder-career">
+
+              <div class="career-heading">
+                Professional Journey
+              </div>
+
+
+              <div class="career-line">
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      Unicon Financial Intermediaries Ltd
+                    </strong>
+
+                    <small>
+                      National Head — Private Wealth,
+                      NRI Business &amp; Real Estate
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      Royal Wealth Management
+                    </strong>
+
+                    <small>
+                      Head — Investment Services, India
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      ABN AMRO Bank
+                    </strong>
+
+                    <small>
+                      Assistant Vice President
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      DBS Cholamandalam Asset Management
+                    </strong>
+
+                    <small>
+                      Regional Manager
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      ING Vysya Mutual Fund
+                    </strong>
+
+                    <small>
+                      Regional Manager
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      Aviva Life Insurance Company Ltd
+                    </strong>
+
+                    <small>
+                      Manager — Sales
+                    </small>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- FOUNDER 02 -->
+
+        <article class="founder-feature founder-feature-light">
+
+          <div class="founder-number">
+            02
+          </div>
+
+
+          <div class="founder-feature-grid">
+
+            <!-- LEFT -->
+
+            <div class="founder-profile">
+
+              <div class="founder-kicker">
+                FOUNDER
+              </div>
+
+              <h3>
+                Archana Yogendra
+              </h3>
+
+              <p class="founder-position">
+                Founder • Technology, Recruitment &amp; Project Management
+              </p>
+
+
+              <div class="founder-highlight">
+
+                <div class="founder-highlight-number">
+                  14
+                </div>
+
+                <div>
+                  <strong>
+                    Years of IT Industry Experience
+                  </strong>
+
+                  <span>
+                    Project management, recruitment,
+                    programming and technology.
+                  </span>
+                </div>
+
+              </div>
+
+
+              <div class="founder-statement">
+
+                <div class="statement-label">
+                  FOUNDER PERSPECTIVE
+                </div>
+
+                <p>
+                  We believe recruitment should create meaningful
+                  connections between organizations and professionals.
+                  Our approach combines technology experience,
+                  recruitment understanding and project management
+                  perspective to help businesses identify people who
+                  can contribute, grow and add long-term value.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+
+            <div class="founder-career">
+
+              <div class="career-heading">
+                Professional Journey
+              </div>
+
+
+              <div class="career-line">
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      Capgemini Consulting
+                    </strong>
+
+                    <small>
+                      Project Manager
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      Oracle
+                    </strong>
+
+                    <small>
+                      Associate Consultant
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      SEEC Technologies Asia Pvt. Ltd.
+                    </strong>
+
+                    <small>
+                      Software Engineer
+                    </small>
+                  </div>
+
+                </div>
+
+
+                <div class="career-item">
+
+                  <span class="career-dot"></span>
+
+                  <div>
+                    <strong>
+                      Genesis Insoft Ltd
+                    </strong>
+
+                    <small>
+                      Software Engineer
+                    </small>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="founder-qualification">
+
+                <span>
+                  QUALIFICATION
+                </span>
+
+                <strong>
+                  MCA • IGNOU
+                </strong>
+
+                <small>
+                  Java Certified Professional
+                </small>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- CLOSING STATEMENT -->
+
+        <div class="founders-closing">
+
+          <div class="closing-line"></div>
+
+          <p>
+            Different backgrounds. One shared belief:
+            <strong>
+              the right people can move businesses forward.
+            </strong>
+          </p>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- INSIGHTS -->
-    <section class="sec alt">
-      <div class="w">
-        <div class="row" style="justify-content:space-between;align-items:end">
-          ${sh("From the field", "Insights that help you hire better.")}
-          <a class="btn b3" href="#/insights" style="margin-bottom:44px">Read all insights</a>
+
+    <!-- KEEP THIS -->
+
+    ${faq()}
+
+  <div class="w">
+
+
+
+    <section class="client-marquee">
+
+  <div class="w">
+
+    <div class="client-marquee-heading">
+      <div class="eb">OUR NETWORK</div>
+
+      <h2>Connecting Talent With Leading Organizations</h2>
+
+      <p>
+        Our recruitment expertise supports businesses across technology,
+        banking, consulting, FMCG and other key industries.
+      </p>
+    </div>
+
+    <!-- ROW 1 : LEFT TO RIGHT -->
+    <div class="logo-marquee">
+
+      <div class="logo-track logo-track-ltr">
+
+        <div class="logo-set">
+
+          <div class="client-logo">
+            <img src="images/client-logos/tech-mahindra.png" alt="Tech Mahindra">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/kotak-mahindra.png" alt="Kotak Mahindra Bank">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/rbl-bank.png" alt="RBL Bank">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/indusland-bank.png" alt="IndusInd Bank">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/wipro.png" alt="Wipro">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/hcltech.png" alt="HCLTech">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/birlasoft.png" alt="Birlasoft">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/infosys.png" alt="Infosys">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/ltimindtree.png" alt="LTIMindtree">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/amazon.png" alt="Amazon">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/mahindra.png" alt="Mahindra">
+          </div>
+
         </div>
-        <div class="grid g3">
-          ${BL.map(b =>
-            `<a class="rv" href="#/insights">
-              ${ph(b[3], "4/3")}
-              <div class="eb" style="margin-top:16px">${b[0]}</div>
-              <h3>${b[1]}</h3>
-              <p>${b[2]}</p>
-            </a>`
-          ).join("")}
+
+        <div class="logo-set" aria-hidden="true">
+
+          <div class="client-logo"><img src="images/client-logos/tech-mahindra.png"></div>
+          <div class="client-logo"><img src="images/client-logos/kotak-mahindra.png"></div>
+          <div class="client-logo"><img src="images/client-logos/rbl-bank.png"></div>
+          <div class="client-logo"><img src="images/client-logos/indusland-bank.png"></div>
+          <div class="client-logo"><img src="images/client-logos/wipro.png"></div>
+          <div class="client-logo"><img src="images/client-logos/hcltech.png"></div>
+          <div class="client-logo"><img src="images/client-logos/birlasoft.png"></div>
+          <div class="client-logo"><img src="images/client-logos/infosys.png"></div>
+          <div class="client-logo"><img src="images/client-logos/ltimindtree.png"></div>
+          <div class="client-logo"><img src="images/client-logos/amazon.png"></div>
+          <div class="client-logo"><img src="images/client-logos/mahindra.png"></div>
+
         </div>
+
       </div>
+
+    </div>
+
+    <!-- ROW 2 : RIGHT TO LEFT -->
+    <div class="logo-marquee">
+
+      <div class="logo-track logo-track-rtl">
+
+        <div class="logo-set">
+
+          <div class="client-logo">
+            <img src="images/client-logos/aditya-birla.png" alt="Aditya Birla Group">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/flipkart.png" alt="Flipkart">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/capgemini.png" alt="Capgemini">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/virtusa.png" alt="Virtusa">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/cognizant.png" alt="Cognizant">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/itc-infotech.png" alt="ITC Infotech">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/mphasis.png" alt="Mphasis">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/ibm.png" alt="IBM">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/godrej.png" alt="Godrej">
+          </div>
+
+          <div class="client-logo">
+            <img src="images/client-logos/icici-bank.png" alt="ICICI Bank">
+          </div>
+
+        </div>
+
+        <div class="logo-set" aria-hidden="true">
+
+          <div class="client-logo"><img src="images/client-logos/aditya-birla.png"></div>
+          <div class="client-logo"><img src="images/client-logos/flipkart.png"></div>
+          <div class="client-logo"><img src="images/client-logos/capgemini.png"></div>
+          <div class="client-logo"><img src="images/client-logos/virtusa.png"></div>
+          <div class="client-logo"><img src="images/client-logos/cognizant.png"></div>
+          <div class="client-logo"><img src="images/client-logos/itc-infotech.png"></div>
+          <div class="client-logo"><img src="images/client-logos/mphasis.png"></div>
+          <div class="client-logo"><img src="images/client-logos/ibm.png"></div>
+          <div class="client-logo"><img src="images/client-logos/godrej.png"></div>
+          <div class="client-logo"><img src="images/client-logos/icici-bank.png"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
     </section>
 
     ${faq()}
@@ -921,70 +1632,197 @@ const P = {
 
   /* ================= JOB DETAIL ================= */
 
-  job: id => {
+job: id => {
 
-    const j = JB.find(x => x.id == id) || JB[0];
+  const j = JB.find(x => x.id == id);
 
-    const u = encodeURIComponent(location.href);
+  if (!j) {
+    return page(
+      "Job Not Found",
+      "This job is no longer available."
+    );
+  }
 
-    return `
+  const jdUrl =
+    j.jdUrl ||
+    j["JD Document Link"] ||
+    j.jd ||
+    "";
 
-      ${page(
-        j.t,
-        `Confidential client · ${j.loc} · ${j.exp} · ${j.type} · ${j.mode} · Posted ${j.posted}`,
-        `<a class="btn b1" href="#/apply/${j.id}">Apply Now</a>`
-      )}
+  return `
 
-      <section class="sec">
-        <div class="w" style="max-width:860px">
+    ${page(
+      j.t,
+      `${j.loc} · ${j.exp} · ${j.type} · ${j.mode} · Posted ${j.posted}`,
+      `
+        ${
+          jdUrl
+            ? `
+              <a
+                class="btn b3"
+                href="${jdUrl}"
+                target="_blank"
+                rel="noopener"
+              >
+                View Full JD
+              </a>
+            `
+            : ""
+        }
 
-          ${[
-            ["Job description", "Placeholder description for this role. Replace with the real brief."],
+        <a
+          class="btn b1"
+          href="${jobApplyUrl(j)}"
+          target="_blank"
+          rel="noopener"
+        >
+          Apply Now
+        </a>
+      `
+    )}
 
-            ["Responsibilities",
-              "<ul class='ul'>" +
-              "<li>Own day-to-day delivery for the function</li>" +
-              "<li>Work with stakeholders</li>" +
-              "<li>Report on outcomes</li>" +
-              "</ul>"
-            ],
+    <section class="sec job-detail-section">
 
-            ["Required skills",
-              `<ul class='ul'>${j.sk.map(s => `<li>${s}</li>`).join("")}</ul>`
-            ],
+      <div class="w job-detail-wrap">
 
-            ["Experience", j.exp],
+        ${
+          j.client
+            ? `
+              <div class="job-client-box">
+                <div class="job-client-label">CLIENT</div>
+                <div class="job-client-name">${j.client}</div>
+              </div>
+            `
+            : ""
+        }
 
-            ["Qualifications", "Relevant degree or equivalent experience."],
+        <div class="job-detail-card">
 
-            ["Benefits", "Competitive compensation and growth. Details shared during the process."]
-          ].map(x =>
-            `<div class="card" style="margin-bottom:16px">
-              <h3>${x[0]}</h3>
-              ${x[1].startsWith("<") ? x[1] : `<p style="margin:0">${x[1]}</p>`}
-            </div>`
-          ).join("")}
+          <div class="job-detail-label">
+            ROLE OVERVIEW
+          </div>
 
-          <div class="row">
-            <a class="btn b1" href="#/apply/${j.id}">Apply Now</a>
+          <div class="job-info-grid">
 
-            <a class="btn b3" target="_blank" rel="noopener"
-              href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a>
+            <div class="job-info-item">
+              <span>Location</span>
+              <strong>${j.loc}</strong>
+            </div>
 
-            <a class="btn b3" target="_blank" rel="noopener"
-              href="https://wa.me/?text=${u}">WhatsApp</a>
+            <div class="job-info-item">
+              <span>Experience</span>
+              <strong>${j.exp}</strong>
+            </div>
 
-            <a class="btn b3"
-              href="mailto:?subject=${encodeURIComponent(j.t)}&body=${u}">Email</a>
+            <div class="job-info-item">
+              <span>Job Type</span>
+              <strong>${j.type}</strong>
+            </div>
+
+            <div class="job-info-item">
+              <span>Work Mode</span>
+              <strong>${j.mode}</strong>
+            </div>
+
+            <div class="job-info-item">
+              <span>Industry</span>
+              <strong>${j.ind}</strong>
+            </div>
+
+            <div class="job-info-item">
+              <span>Department</span>
+              <strong>${j.dept}</strong>
+            </div>
+
           </div>
 
         </div>
-      </section>
 
-    `;
-  },
+        ${
+          j.sk && j.sk.length
+            ? `
+              <div class="job-detail-card">
 
+                <div class="job-detail-label">
+                  KEY SKILLS
+                </div>
 
+                <div class="job-skills">
+                  ${j.sk.map(skill =>
+                    `<span class="job-skill">${skill}</span>`
+                  ).join("")}
+                </div>
+
+              </div>
+            `
+            : ""
+        }
+
+        ${
+          jdUrl
+            ? `
+              <div class="job-detail-card job-jd-card">
+
+                <div class="job-detail-label">
+                  FULL JOB DESCRIPTION
+                </div>
+
+                <h3>
+                  View the complete job description
+                </h3>
+
+                <p>
+                  Open the complete JD for responsibilities,
+                  qualifications and role-specific details.
+                </p>
+
+                <a
+                  class="btn b2"
+                  href="${jdUrl}"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Open Full JD →
+                </a>
+
+              </div>
+            `
+            : ""
+        }
+
+        <div class="job-apply-panel">
+
+          <div>
+            <div class="job-detail-label">
+              INTERESTED IN THIS ROLE?
+            </div>
+
+            <h3>
+              Take the next step in your career.
+            </h3>
+
+            <p>
+              Submit your application through our candidate form.
+            </p>
+          </div>
+
+          <a
+            class="btn b1"
+            href="${jobApplyUrl(j)}"
+            target="_blank"
+            rel="noopener"
+          >
+            Apply Now →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  `;
+},
   /* ================= APPLY ================= */
 
   apply: id => {
