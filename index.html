@@ -660,6 +660,10 @@
 
         function openHiringPopup() {
 
+          if (sessionStorage.getItem('hiringFormSubmitted') === 'true') {
+            return;
+          }
+
           popup.classList.add("active");
 
           document.body.classList.add(

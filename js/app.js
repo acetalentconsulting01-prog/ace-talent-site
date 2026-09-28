@@ -323,7 +323,7 @@ if (footer) {
           <div class="social-icons">
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/13255487/"
               target="_blank"
               rel="noopener"
               aria-label="LinkedIn"
@@ -332,7 +332,7 @@ if (footer) {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/acetalentconsulting/"
               target="_blank"
               rel="noopener"
               aria-label="Instagram"
@@ -341,7 +341,7 @@ if (footer) {
             </a>
 
             <a
-              href="#"
+              href="https://www.facebook.com/AceTalentConsultingMumbai/"
               target="_blank"
               rel="noopener"
               aria-label="Facebook"
@@ -349,6 +349,7 @@ if (footer) {
               f
             </a>
 
+            <!--
             <a
               href="#"
               target="_blank"
@@ -357,6 +358,7 @@ if (footer) {
               title="YouTube">
               ▶
             </a>
+            -->
 
           </div>
 
