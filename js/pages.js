@@ -1333,125 +1333,2146 @@ const P = {
   `,
 
 
-  /* ================= ABOUT ================= */
+    /* ================= ABOUT ================= */
 
   about: () => `
 
-    ${page(
-      "People. Potential. Possibilities.",
-      "ACE TALENT CONSULTING is a talent consulting, recruitment and staffing company connecting businesses with capable professionals."
-    )}
+    <section class="ace-about-image-hero">
 
-    <section class="sec">
+  <img
+    src="images/about-ace-hero.jpg"
+    alt="ACE Talent Consulting recruitment and staffing"
+  >
+
+  <div class="ace-about-image-hero-overlay"></div>
+
+  <div class="w ace-about-image-hero-content">
+
+    <div class="ace-about-eyebrow">
+      ABOUT ACE TALENT CONSULTING
+    </div>
+
+    <h1>
+      About ACE Talent Consulting |
+      Recruitment &amp; Staffing Company in India
+    </h1>
+
+    <p>
+      Learn about ACE Talent Consulting, a recruitment and staffing company
+      providing permanent recruitment, contract staffing, executive search,
+      talent acquisition, RPO and workforce solutions across India.
+    </p>
+
+  </div>
+
+</section>
+
+    <!-- =====================================================
+         ABOUT HERO
+         ===================================================== -->
+
+    <section class="ace-about-premium-hero">
       <div class="w">
-        <div class="grid g3">
-          ${[
-            ["Who we are", "A recruitment and talent consulting partner built around people."],
-            ["What we do", "Permanent hiring, contract staffing, executive search, TA, RPO and workforce solutions."],
-            ["Our approach", "Understand the brief, know the person, then screen with care."],
-            ["Our mission", "Connect the right people with the right opportunities."],
-            ["Our vision", "To be the talent partner organizations and professionals trust."],
-            ["Our values", "Clarity, care, integrity and follow-through."]
-          ].map(x =>
-            `<div class="card h rv">
-              <h3>${x[0]}</h3>
-              <p style="margin:0">${x[1]}</p>
-            </div>`
-          ).join("")}
+
+        <div class="ace-about-hero-layout">
+
+          <div class="ace-about-hero-content rv">
+
+            <div class="ace-about-eyebrow">
+              ABOUT ACE TALENT CONSULTING
+            </div>
+
+            <h1>
+              Building stronger businesses
+              <span>through the right talent.</span>
+            </h1>
+
+            <p class="ace-about-hero-text">
+              ACE Talent Consulting is a recruitment and staffing company in
+              India focused on connecting organizations with professionals
+              who match their business requirements, skills, experience and
+              workforce objectives.
+            </p>
+
+            <p class="ace-about-hero-text">
+              From permanent recruitment and contract staffing to executive
+              search, talent acquisition and workforce solutions, we support
+              organizations across different stages of their hiring journey.
+            </p>
+
+            <div class="ace-about-hero-buttons">
+              <a href="#/employers" class="btn b1">
+                Hire Talent
+              </a>
+
+              <a href="#/jobs" class="btn b3">
+                Explore Careers
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="ace-about-hero-visual rv">
+
+            <div class="ace-about-image-wrap">
+
+              <img
+                src="images/about-ace.jpg"
+                alt="ACE Talent Consulting recruitment and staffing team"
+                loading="eager"
+              >
+
+              <div class="ace-about-image-overlay"></div>
+
+              <div class="ace-about-image-caption">
+                <span>RECRUITMENT • STAFFING • TALENT ACQUISITION</span>
+                <strong>
+                  Connecting people, businesses and opportunities.
+                </strong>
+              </div>
+
+            </div>
+
+            <div class="ace-about-floating-card">
+              <span>Our focus</span>
+              <strong>People + Business</strong>
+              <small>
+                Understanding both sides of every hiring conversation.
+              </small>
+            </div>
+
+          </div>
+
         </div>
+
       </div>
     </section>
+
+
+    <!-- =====================================================
+         INTRODUCTION
+         ===================================================== -->
+
+    <section class="sec ace-about-story-section">
+
+      <div class="w">
+
+        <div class="ace-about-story-grid">
+
+          <div class="ace-about-section-heading rv">
+
+            <div class="eb">
+              WHO WE ARE
+            </div>
+
+            <h2>
+              A talent partner that looks beyond the resume.
+            </h2>
+
+            <div class="ace-about-heading-line"></div>
+
+          </div>
+
+
+          <div class="ace-about-story-copy rv">
+
+            <p class="large">
+              Recruitment is often the first connection between a business
+              and a future employee. At ACE Talent Consulting, we believe
+              that connection deserves attention, context and understanding.
+            </p>
+
+            <p>
+              We work with organizations to understand the requirement behind
+              every position — the role, responsibilities, experience,
+              functional expectations, business environment and hiring
+              objective.
+            </p>
+
+            <p>
+              We then focus our recruitment efforts on identifying relevant
+              professionals and supporting the hiring process with structured
+              communication and candidate evaluation.
+            </p>
+
+            <p>
+              Our work spans permanent recruitment, contract staffing,
+              executive search, talent acquisition, RPO and workforce
+              solutions, allowing us to support both individual hiring needs
+              and broader workforce requirements.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMPANY POSITIONING
+         ===================================================== -->
 
     <section class="sec alt">
+
       <div class="w">
-        ${sh("Brand story", "Our milestones", "Editable placeholders.")}
-        <div class="steps rv">
-          ${[
-            "Founded",
-            "First clients",
-            "Network growth",
-            "Pan India reach",
-            "Next chapter",
-            "Add milestone"
-          ].map(x =>
-            `<div class="step">
-              <h3>${x}</h3>
-              <p>Milestone description (placeholder).</p>
-            </div>`
-          ).join("")}
+
+        <div class="ace-about-position-grid">
+
+          <article class="ace-about-position-card rv">
+
+            <div class="ace-about-position-number">
+              01
+            </div>
+
+            <div class="eb">
+              FOR BUSINESSES
+            </div>
+
+            <h3>
+              Recruitment support aligned with business requirements.
+            </h3>
+
+            <p>
+              We help employers identify relevant talent for business-critical
+              and ongoing hiring requirements across functions, industries,
+              experience levels and locations.
+            </p>
+
+            <a href="#/employers" class="ace-about-text-link">
+              Hire Talent <span>↗</span>
+            </a>
+
+          </article>
+
+
+          <article class="ace-about-position-card rv">
+
+            <div class="ace-about-position-number">
+              02
+            </div>
+
+            <div class="eb">
+              FOR PROFESSIONALS
+            </div>
+
+            <h3>
+              Career opportunities connected to skills and experience.
+            </h3>
+
+            <p>
+              We connect candidates with relevant opportunities and help
+              professionals explore roles based on their experience,
+              capabilities and career direction.
+            </p>
+
+            <a href="#/jobs" class="ace-about-text-link">
+              Find a Job <span>↗</span>
+            </a>
+
+          </article>
+
+
+          <article class="ace-about-position-card rv">
+
+            <div class="ace-about-position-number">
+              03
+            </div>
+
+            <div class="eb">
+              OUR APPROACH
+            </div>
+
+            <h3>
+              Structured process with a people-focused perspective.
+            </h3>
+
+            <p>
+              We combine requirement understanding, focused sourcing,
+              screening, communication and coordination to keep the
+              recruitment journey organized.
+            </p>
+
+            <a href="#/services" class="ace-about-text-link">
+              Explore Services <span>↗</span>
+            </a>
+
+          </article>
+
         </div>
+
       </div>
+
     </section>
 
-    ${ctaBlock()}
 
-  `,
-
-
-  /* ================= SERVICES ================= */
-
-  services: () => `
-
-    ${page(
-      "Talent solutions designed around your business.",
-      "From a single critical role to a workforce program."
-    )}
+    <!-- =====================================================
+         OUR SERVICES
+         ===================================================== -->
 
     <section class="sec">
+
       <div class="w">
-        <div class="industry-grid">
-          ${SV.map((s, i) => svcCard(s, i)).join("")}
+
+        ${sh(
+          "OUR RECRUITMENT EXPERTISE",
+          "End-to-end talent solutions for different hiring needs.",
+          "ACE Talent Consulting provides recruitment and staffing services designed around organizational requirements, role complexity and workforce objectives."
+        )}
+
+        <div class="ace-about-expertise-grid">
+
+          <article class="ace-about-expertise-card rv">
+            <span>01</span>
+            <div>
+              <h3>Permanent Recruitment</h3>
+              <p>
+                Hiring support for organizations looking to build long-term
+                teams across business functions and experience levels.
+              </p>
+            </div>
+            <a href="#/services/permanent-recruitment">↗</a>
+          </article>
+
+          <article class="ace-about-expertise-card rv">
+            <span>02</span>
+            <div>
+              <h3>Contract Staffing</h3>
+              <p>
+                Flexible staffing support for project-based, temporary and
+                evolving workforce requirements.
+              </p>
+            </div>
+            <a href="#/services/contract-staffing">↗</a>
+          </article>
+
+          <article class="ace-about-expertise-card rv">
+            <span>03</span>
+            <div>
+              <h3>Executive Search</h3>
+              <p>
+                Focused talent identification for specialist, senior and
+                business-critical roles.
+              </p>
+            </div>
+            <a href="#/services/executive-search">↗</a>
+          </article>
+
+          <article class="ace-about-expertise-card rv">
+            <span>04</span>
+            <div>
+              <h3>Talent Acquisition</h3>
+              <p>
+                Recruitment support aligned with hiring goals, talent
+                requirements and organizational priorities.
+              </p>
+            </div>
+            <a href="#/services/talent-acquisition">↗</a>
+          </article>
+
+          <article class="ace-about-expertise-card rv">
+            <span>05</span>
+            <div>
+              <h3>RPO</h3>
+              <p>
+                Recruitment process support for organizations seeking
+                structured and scalable hiring capabilities.
+              </p>
+            </div>
+            <a href="#/services/rpo">↗</a>
+          </article>
+
+          <article class="ace-about-expertise-card rv">
+            <span>06</span>
+            <div>
+              <h3>Workforce Solutions</h3>
+              <p>
+                Recruitment and staffing support that can adapt to changing
+                workforce requirements.
+              </p>
+            </div>
+            <a href="#/services/workforce-solutions">↗</a>
+          </article>
+
         </div>
+
       </div>
+
     </section>
 
-    ${ctaBlock()}
+
+    <!-- =====================================================
+         DETAILED RECRUITMENT APPROACH
+         ===================================================== -->
+
+    <section class="sec alt">
+
+      <div class="w">
+
+        <div class="ace-about-process-intro rv">
+
+          <div>
+            <div class="eb">
+              HOW WE WORK
+            </div>
+
+            <h2>
+              A recruitment process built around clarity.
+            </h2>
+          </div>
+
+          <p>
+            Our approach is designed to create alignment between the
+            employer's requirement and the candidate's capabilities before
+            the hiring conversation moves forward.
+          </p>
+
+        </div>
+
+
+        <div class="ace-about-process-grid">
+
+          <div class="ace-about-process-card rv">
+            <div class="ace-step-number">01</div>
+            <span>DISCOVER</span>
+            <h3>Understand the requirement</h3>
+            <p>
+              We understand the job role, responsibilities, experience,
+              skills, location, business environment and hiring objective.
+            </p>
+          </div>
+
+          <div class="ace-about-process-card rv">
+            <div class="ace-step-number">02</div>
+            <span>SOURCE</span>
+            <h3>Identify relevant talent</h3>
+            <p>
+              Candidate sourcing is focused around the specific requirement
+              rather than treating every vacancy the same way.
+            </p>
+          </div>
+
+          <div class="ace-about-process-card rv">
+            <div class="ace-step-number">03</div>
+            <span>SCREEN</span>
+            <h3>Review candidate suitability</h3>
+            <p>
+              Profiles are evaluated against relevant experience, functional
+              skills, location and role expectations.
+            </p>
+          </div>
+
+          <div class="ace-about-process-card rv">
+            <div class="ace-step-number">04</div>
+            <span>CONNECT</span>
+            <h3>Coordinate the process</h3>
+            <p>
+              We support communication and interview coordination between
+              employers and shortlisted professionals.
+            </p>
+          </div>
+
+          <div class="ace-about-process-card rv">
+            <div class="ace-step-number">05</div>
+            <span>ALIGN</span>
+            <h3>Keep stakeholders informed</h3>
+            <p>
+              Clear communication helps keep candidates and hiring teams
+              aligned as the recruitment process progresses.
+            </p>
+          </div>
+
+          <div class="ace-about-process-card rv">
+            <div class="ace-step-number">06</div>
+            <span>PARTNER</span>
+            <h3>Support ongoing hiring</h3>
+            <p>
+              Our relationship can extend beyond a single vacancy to support
+              recurring recruitment and workforce requirements.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         INDUSTRIES
+         ===================================================== -->
+
+    <section class="sec">
+
+      <div class="w">
+
+        ${sh(
+          "INDUSTRIES WE SERVE",
+          "Recruitment support across diverse business sectors.",
+          "Our industry coverage includes technology, banking and financial services, FMCG, healthcare, manufacturing, sales, retail, logistics and other business environments."
+        )}
+
+        <div class="ace-about-industry-grid">
+
+          <a href="#/industries/it-technology" class="ace-about-industry-card rv">
+            <span>01</span>
+            <strong>IT &amp; Technology</strong>
+            <small>Technology &amp; digital talent</small>
+          </a>
+
+          <a href="#/industries/banking-finance" class="ace-about-industry-card rv">
+            <span>02</span>
+            <strong>Banking &amp; Financial Services</strong>
+            <small>Banking, finance &amp; financial roles</small>
+          </a>
+
+          <a href="#/industries/fmcg-consumer" class="ace-about-industry-card rv">
+            <span>03</span>
+            <strong>FMCG &amp; Consumer</strong>
+            <small>Consumer-facing businesses</small>
+          </a>
+
+          <a href="#/industries/healthcare" class="ace-about-industry-card rv">
+            <span>04</span>
+            <strong>Healthcare</strong>
+            <small>Healthcare talent requirements</small>
+          </a>
+
+          <a href="#/industries/manufacturing-engineering" class="ace-about-industry-card rv">
+            <span>05</span>
+            <strong>Manufacturing &amp; Engineering</strong>
+            <small>Technical &amp; operational talent</small>
+          </a>
+
+          <a href="#/industries/sales-marketing" class="ace-about-industry-card rv">
+            <span>06</span>
+            <strong>Sales &amp; Marketing</strong>
+            <small>Revenue and growth functions</small>
+          </a>
+
+          <a href="#/industries/retail-ecommerce" class="ace-about-industry-card rv">
+            <span>07</span>
+            <strong>Retail &amp; E-commerce</strong>
+            <small>Retail and digital commerce roles</small>
+          </a>
+
+          <a href="#/industries/logistics-supply-chain" class="ace-about-industry-card rv">
+            <span>08</span>
+            <strong>Logistics &amp; Supply Chain</strong>
+            <small>Operations and supply chain talent</small>
+          </a>
+
+          <div class="ace-about-industry-card rv">
+            <span>09</span>
+            <strong>GCC</strong>
+            <small>Global capability centre hiring</small>
+          </div>
+
+          <div class="ace-about-industry-card rv">
+            <span>10</span>
+            <strong>Telecom</strong>
+            <small>Telecom and communication roles</small>
+          </div>
+
+          <div class="ace-about-industry-card rv">
+            <span>11</span>
+            <strong>BPO</strong>
+            <small>Customer and business operations</small>
+          </div>
+
+          <div class="ace-about-industry-card rv">
+            <span>12</span>
+            <strong>Hospitality</strong>
+            <small>Hospitality and service roles</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY ACE
+         ===================================================== -->
+
+    <section class="sec ace-about-why-section">
+
+      <div class="w">
+
+        <div class="ace-about-why-grid">
+
+          <div class="ace-about-why-heading rv">
+
+            <div class="ace-about-eyebrow light">
+              WHY ACE TALENT CONSULTING
+            </div>
+
+            <h2>
+              Recruitment with a business-first and people-focused approach.
+            </h2>
+
+            <p>
+              Every organization has different hiring priorities. Every
+              professional has a different career journey. Our role is to
+              create the connection between those two perspectives.
+            </p>
+
+          </div>
+
+
+          <div class="ace-about-why-list">
+
+            <div class="ace-about-why-item rv">
+              <span>01</span>
+              <div>
+                <h3>Requirement-focused recruitment</h3>
+                <p>
+                  We begin by understanding the actual requirement behind
+                  the role before moving into candidate sourcing.
+                </p>
+              </div>
+            </div>
+
+            <div class="ace-about-why-item rv">
+              <span>02</span>
+              <div>
+                <h3>Industry understanding</h3>
+                <p>
+                  Recruitment across different business sectors requires
+                  context, role awareness and understanding of functional
+                  expectations.
+                </p>
+              </div>
+            </div>
+
+            <div class="ace-about-why-item rv">
+              <span>03</span>
+              <div>
+                <h3>Structured candidate screening</h3>
+                <p>
+                  Profiles are considered around skills, experience,
+                  location and overall relevance to the role.
+                </p>
+              </div>
+            </div>
+
+            <div class="ace-about-why-item rv">
+              <span>04</span>
+              <div>
+                <h3>Clear communication</h3>
+                <p>
+                  A transparent recruitment process helps employers and
+                  candidates stay informed throughout the journey.
+                </p>
+              </div>
+            </div>
+
+            <div class="ace-about-why-item rv">
+              <span>05</span>
+              <div>
+                <h3>Flexible hiring support</h3>
+                <p>
+                  From permanent positions to contract and workforce
+                  requirements, the engagement can be shaped around the need.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LEADERSHIP
+         ===================================================== -->
+
+    <section class="sec">
+
+      <div class="w">
+
+        ${sh(
+          "OUR LEADERSHIP",
+          "Experience that shapes our approach to talent.",
+          "ACE Talent Consulting is led by professionals with experience spanning banking, financial markets, technology, project management, recruitment and business functions."
+        )}
+
+        <div class="ace-about-leadership-grid">
+
+          <article class="ace-about-leader-card dark rv">
+
+            <div class="ace-leader-index">
+              01
+            </div>
+
+            <div class="ace-leader-role">
+              FOUNDER
+            </div>
+
+            <h3>
+              Mahender Yogendra
+            </h3>
+
+            <div class="ace-leader-focus">
+              Banking • Financial Markets • Sales • Marketing • Wealth Management
+            </div>
+
+            <div class="ace-leader-experience">
+              <strong>18+</strong>
+              <span>Years of professional experience</span>
+            </div>
+
+            <p>
+              Mahender brings professional experience across banking,
+              financial markets, sales, marketing and wealth management.
+              His background contributes a business and market-oriented
+              perspective to the firm's approach to talent and recruitment.
+            </p>
+
+            <div class="ace-leader-tags">
+              <span>Banking</span>
+              <span>Financial Markets</span>
+              <span>Sales</span>
+              <span>Marketing</span>
+              <span>Wealth Management</span>
+            </div>
+
+          </article>
+
+
+          <article class="ace-about-leader-card light rv">
+
+            <div class="ace-leader-index">
+              02
+            </div>
+
+            <div class="ace-leader-role">
+              FOUNDER
+            </div>
+
+            <h3>
+              Archana Yogendra
+            </h3>
+
+            <div class="ace-leader-focus">
+              Technology • Project Management • Recruitment
+            </div>
+
+            <div class="ace-leader-experience">
+              <strong>14</strong>
+              <span>Years of professional experience</span>
+            </div>
+
+            <p>
+              Archana brings experience across IT, project management and
+              recruitment, with professional exposure including Capgemini,
+              Oracle, SEEC Technologies and Genesis Insoft. Her technology
+              and project background adds a structured perspective to talent
+              acquisition and recruitment.
+            </p>
+
+            <div class="ace-leader-tags">
+              <span>IT</span>
+              <span>Project Management</span>
+              <span>Recruitment</span>
+              <span>Technology</span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOR CANDIDATES
+         ===================================================== -->
+
+    <section class="sec alt">
+
+      <div class="w">
+
+        <div class="ace-about-candidate-block rv">
+
+          <div class="ace-about-candidate-number">
+            CAREERS
+          </div>
+
+          <div class="ace-about-candidate-content">
+
+            <div class="eb">
+              FOR CANDIDATES
+            </div>
+
+            <h2>
+              Your skills deserve the right opportunity.
+            </h2>
+
+            <p>
+              Whether you are actively looking for a new role or exploring
+              your next career move, ACE Talent Consulting provides access
+              to recruitment opportunities across multiple industries and
+              functions.
+            </p>
+
+            <p>
+              Explore available jobs, review role requirements and apply for
+              opportunities that match your experience and career direction.
+            </p>
+
+            <div class="ace-about-candidate-buttons">
+              <a href="#/jobs" class="btn b2">
+                Find a Job
+              </a>
+
+              <a href="#/candidates" class="btn b3">
+                Submit Resume
+              </a>
+            </div>
+
+          </div>
+
+          <div class="ace-about-candidate-side">
+            <div>
+              <span>01</span>
+              <strong>Explore opportunities</strong>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Share your profile</strong>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Move toward your next career step</strong>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EMPLOYER CTA
+         ===================================================== -->
+
+    <section class="sec">
+
+      <div class="w">
+
+        <div class="ace-about-final-cta rv">
+
+          <div class="ace-about-final-copy">
+
+            <div class="eb">
+              FOR EMPLOYERS
+            </div>
+
+            <h2>
+              Looking for the right talent for your business?
+            </h2>
+
+            <p>
+              Share your hiring requirement with ACE Talent Consulting.
+              Whether you need a single professional, multiple positions,
+              contract staffing or ongoing recruitment support, we can
+              understand your requirement and discuss the relevant approach.
+            </p>
+
+          </div>
+
+          <div class="ace-about-final-actions">
+
+            <a href="#/employers" class="btn b1">
+              Submit Hiring Requirement
+            </a>
+
+            <a href="#/contact" class="btn b3">
+              Contact Us
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SEO FAQ
+         ===================================================== -->
+
+    <section class="sec alt">
+
+      <div class="w ace-about-faq-wrap">
+
+        <div class="ace-about-faq-heading rv">
+
+          <div class="eb">
+            FREQUENTLY ASKED QUESTIONS
+          </div>
+
+          <h2>
+            About ACE Talent Consulting
+          </h2>
+
+          <p>
+            Common questions about our recruitment, staffing and talent
+            acquisition services.
+          </p>
+
+        </div>
+
+
+        <div class="ace-about-faq-list">
+
+          <details class="rv">
+            <summary>
+              What does ACE Talent Consulting do?
+            </summary>
+            <p>
+              ACE Talent Consulting is a recruitment and staffing company
+              providing permanent recruitment, contract staffing, executive
+              search, talent acquisition, RPO and workforce solutions for
+              organizations and professionals.
+            </p>
+          </details>
+
+          <details class="rv">
+            <summary>
+              Does ACE Talent Consulting provide recruitment services in India?
+            </summary>
+            <p>
+              Yes. ACE Talent Consulting provides recruitment and staffing
+              support for organizations hiring across India, subject to the
+              specific role, industry and hiring requirement.
+            </p>
+          </details>
+
+          <details class="rv">
+            <summary>
+              What types of recruitment services are available?
+            </summary>
+            <p>
+              Recruitment services include permanent hiring, contract staffing,
+              executive search, talent acquisition, RPO and workforce
+              solutions.
+            </p>
+          </details>
+
+          <details class="rv">
+            <summary>
+              Can companies hire through ACE Talent Consulting?
+            </summary>
+            <p>
+              Yes. Employers can submit their hiring requirements through the
+              Hire Talent section so the recruitment team can understand the
+              requirement and discuss the appropriate hiring support.
+            </p>
+          </details>
+
+          <details class="rv">
+            <summary>
+              How can candidates apply for jobs?
+            </summary>
+            <p>
+              Candidates can explore the available opportunities through the
+              Find a Job section and apply for relevant positions. Candidates
+              can also submit their resume through the Careers section.
+            </p>
+          </details>
+
+          <details class="rv">
+            <summary>
+              Which industries does ACE Talent Consulting support?
+            </summary>
+            <p>
+              Industry coverage includes IT and technology, banking and
+              financial services, FMCG, healthcare, manufacturing, sales,
+              retail, logistics, GCC, telecom, BPO and hospitality.
+            </p>
+          </details>
+          <details class="rv">
+  <summary>
+    How can I contact ACE Talent Consulting?
+  </summary>
+  <p>
+    You can contact ACE Talent Consulting at
+    <strong>${CO.phone}</strong>
+    or use our <a href="#/contact">Contact Us</a> page to send your enquiry.
+  </p>
+</details>
+
+<details class="rv">
+  <summary>
+    Where can I share my CV?
+  </summary>
+  <p>
+    Candidates can share their CV at
+    <a href="mailto:hr@acetalentconsulting.com">
+      hr@acetalentconsulting.com
+    </a>
+    or submit their profile through our
+    <a href="#/candidates">Careers</a> section.
+  </p>
+</details>
+
+        </div>
+
+      </div>
+
+    </section>
 
   `,
+  /* ================= SERVICES ================= */
+
+services: () => `
+
+  <section class="services-hero">
+    <div class="services-hero-overlay"></div>
+
+    <div class="w services-hero-inner">
+
+      <div class="services-hero-copy rv">
+
+        <div class="eb">
+          OUR SERVICES
+        </div>
+
+        <h1>
+          Recruitment &amp; Staffing
+          <span>Solutions for Growing Businesses</span>
+        </h1>
+
+        <p>
+          ACE Talent Consulting provides recruitment and staffing services
+          that help businesses identify, attract and connect with relevant
+          professionals across industries, functions and experience levels.
+        </p>
+
+        <p>
+          From permanent recruitment and contract staffing to executive search,
+          talent acquisition, RPO and workforce solutions, we support employers
+          with hiring requirements ranging from individual positions to
+          ongoing workforce needs.
+        </p>
+
+        <div class="row">
+          <a class="btn b1" href="#/employers">
+            Hire Talent
+          </a>
+
+          <a class="btn b3" href="#/contact">
+            Talk to Our Experts
+          </a>
+        </div>
+
+      </div>
+
+      <div class="services-hero-card rv">
+
+        <div class="services-hero-card-label">
+          WHAT WE OFFER
+        </div>
+
+        <h3>
+          Talent solutions built around your hiring requirement.
+        </h3>
+
+        <div class="services-hero-points">
+
+          <div>
+            <b>01</b>
+            <span>Permanent Recruitment</span>
+          </div>
+
+          <div>
+            <b>02</b>
+            <span>Contract Staffing</span>
+          </div>
+
+          <div>
+            <b>03</b>
+            <span>Executive Search</span>
+          </div>
+
+          <div>
+            <b>04</b>
+            <span>Talent Acquisition</span>
+          </div>
+
+          <div>
+            <b>05</b>
+            <span>RPO</span>
+          </div>
+
+          <div>
+            <b>06</b>
+            <span>Workforce Solutions</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- INTRO -->
+  <section class="sec">
+
+    <div class="w">
+
+      <div class="services-intro-grid">
+
+        <div class="rv">
+
+          <div class="eb">
+            RECRUITMENT EXPERTISE
+          </div>
+
+          <h2>
+            More than filling vacancies.
+            We focus on finding relevant talent.
+          </h2>
+
+        </div>
+
+        <div class="services-intro-copy rv">
+
+          <p class="large">
+            Effective recruitment starts with understanding the requirement
+            behind the role.
+          </p>
+
+          <p>
+            At ACE Talent Consulting, we look at the position, responsibilities,
+            skills, experience, location and business context before aligning
+            the recruitment approach.
+          </p>
+
+          <p>
+            This helps us support organizations with a more focused approach
+            to permanent hiring, contract staffing, executive recruitment and
+            broader talent acquisition requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CORE SERVICES -->
+  <section class="sec alt" id="recruitment-staffing-services">
+
+    <div class="w">
+
+      ${sh(
+        "OUR TALENT SOLUTIONS",
+        "Recruitment and staffing services designed around your business.",
+        "Explore our core recruitment services and discover how each solution can support different workforce and hiring requirements."
+      )}
+
+      <div class="services-list">
+
+        ${SV.map((s, i) => `
+          
+          <a
+            href="#/services/${s[0]}"
+            class="services-list-item rv"
+          >
+
+            <div class="services-list-number">
+              ${String(i + 1).padStart(2, "0")}
+            </div>
+
+            <div class="services-list-main">
+
+              <div class="services-list-tag">
+                ${i === 0 ? "LONG-TERM HIRING" :
+                  i === 1 ? "FLEXIBLE WORKFORCE" :
+                  i === 2 ? "SPECIALIST HIRING" :
+                  i === 3 ? "TALENT STRATEGY" :
+                  i === 4 ? "RECRUITMENT OPERATIONS" :
+                  "WORKFORCE SUPPORT"}
+              </div>
+
+              <h3>
+                ${s[1]}
+              </h3>
+
+              <p>
+                ${s[2]}
+              </p>
+
+            </div>
+
+            <div class="services-list-arrow">
+              →
+            </div>
+
+          </a>
+
+        `).join("")}
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY THIS MATTERS -->
+  <section class="sec">
+
+    <div class="w">
+
+      <div class="services-benefit-heading rv">
+
+        <div>
+
+          <div class="eb">
+            WHY OUR APPROACH
+          </div>
+
+          <h2>
+            Recruitment built around relevance,
+            clarity and business needs.
+          </h2>
+
+        </div>
+
+        <p>
+          Hiring decisions can have a direct impact on teams, productivity
+          and business growth. Our approach focuses on creating alignment
+          between the employer's requirement and the professional being
+          considered.
+        </p>
+
+      </div>
+
+
+      <div class="services-benefit-grid">
+
+        <div class="services-benefit-card rv">
+          <span>01</span>
+          <h3>Requirement-led sourcing</h3>
+          <p>
+            We understand the role before beginning the search for relevant
+            professionals.
+          </p>
+        </div>
+
+        <div class="services-benefit-card rv">
+          <span>02</span>
+          <h3>Focused candidate screening</h3>
+          <p>
+            Profiles are reviewed against experience, skills, location and
+            role expectations.
+          </p>
+        </div>
+
+        <div class="services-benefit-card rv">
+          <span>03</span>
+          <h3>Industry understanding</h3>
+          <p>
+            Recruitment is adapted to different industries and functional
+            hiring environments.
+          </p>
+        </div>
+
+        <div class="services-benefit-card rv">
+          <span>04</span>
+          <h3>Clear coordination</h3>
+          <p>
+            Structured communication helps employers and candidates stay
+            aligned through the hiring journey.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW WE WORK -->
+  <section class="sec alt">
+
+    <div class="w">
+
+      ${sh(
+        "HOW WE WORK",
+        "From hiring requirement to the right connection.",
+        "Our recruitment process is designed to keep the hiring journey focused and organized."
+      )}
+
+      <div class="services-process">
+
+        <div class="services-process-item rv">
+          <span>01</span>
+          <small>UNDERSTAND</small>
+          <h3>Understand the requirement</h3>
+          <p>
+            We understand the role, experience, skills, location and business
+            requirement.
+          </p>
+        </div>
+
+        <div class="services-process-item rv">
+          <span>02</span>
+          <small>SOURCE</small>
+          <h3>Identify relevant talent</h3>
+          <p>
+            We focus sourcing around professionals relevant to the requirement.
+          </p>
+        </div>
+
+        <div class="services-process-item rv">
+          <span>03</span>
+          <small>SCREEN</small>
+          <h3>Evaluate profiles</h3>
+          <p>
+            Candidates are reviewed against the key requirements of the role.
+          </p>
+        </div>
+
+        <div class="services-process-item rv">
+          <span>04</span>
+          <small>CONNECT</small>
+          <h3>Coordinate the process</h3>
+          <p>
+            We support communication, shortlisting and interview coordination.
+          </p>
+        </div>
+
+        <div class="services-process-item rv">
+          <span>05</span>
+          <small>PARTNER</small>
+          <h3>Support ongoing hiring</h3>
+          <p>
+            Our support can continue as the organization's hiring requirements
+            evolve.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INDUSTRIES -->
+  <section class="sec">
+
+    <div class="w">
+
+      ${sh(
+        "INDUSTRIES WE SERVE",
+        "Recruitment support across diverse sectors.",
+        "Our services support organizations across technology, banking, FMCG, healthcare, manufacturing, sales, retail, logistics and other business environments."
+      )}
+
+      <div class="services-industry-grid">
+
+        ${INDS.map((x, i) => `
+          
+          <a
+            href="#/industries/${x[0]}"
+            class="services-industry-card rv"
+          >
+
+            <span>
+              ${String(i + 1).padStart(2, "0")}
+            </span>
+
+            <strong>
+              ${x[1]}
+            </strong>
+
+            <small>
+              Explore recruitment expertise →
+            </small>
+
+          </a>
+
+        `).join("")}
+
+      </div>
+
+      <div style="margin-top:28px">
+        <a class="btn b3" href="#/industries">
+          View All Industries
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ENGAGEMENT -->
+  <section class="sec alt">
+
+    <div class="w">
+
+      <div class="services-engagement rv">
+
+        <div>
+
+          <div class="eb">
+            FOR EMPLOYERS
+          </div>
+
+          <h2>
+            Tell us what you need to hire.
+          </h2>
+
+          <p>
+            Whether you are hiring for one position, multiple roles,
+            contract staffing requirements or ongoing recruitment support,
+            start by sharing your requirement with us.
+          </p>
+
+          <a class="btn b1" href="#/employers">
+            Submit Hiring Requirement
+          </a>
+
+        </div>
+
+
+        <div class="services-engagement-side">
+
+          <div>
+            <span>01</span>
+            <strong>Single-position hiring</strong>
+          </div>
+
+          <div>
+            <span>02</span>
+            <strong>Multiple-position hiring</strong>
+          </div>
+
+          <div>
+            <span>03</span>
+            <strong>Contract staffing</strong>
+          </div>
+
+          <div>
+            <span>04</span>
+            <strong>Ongoing recruitment support</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="sec">
+
+    <div class="w services-faq">
+
+      ${sh(
+        "FREQUENTLY ASKED QUESTIONS",
+        "Recruitment & staffing services",
+        "Common questions about our recruitment and staffing solutions."
+      )}
+
+      <details class="rv">
+        <summary>
+          What recruitment services does ACE Talent Consulting provide?
+        </summary>
+        <p>
+          ACE Talent Consulting provides permanent recruitment, contract
+          staffing, executive search, talent acquisition, RPO and workforce
+          solutions for organizations.
+        </p>
+      </details>
+
+      <details class="rv">
+        <summary>
+          Can ACE Talent Consulting support hiring across India?
+        </summary>
+        <p>
+          Recruitment and staffing support is available for hiring
+          requirements across India, depending on the role, industry,
+          location and business requirement.
+        </p>
+      </details>
+
+      <details class="rv">
+        <summary>
+          How can a company submit a hiring requirement?
+        </summary>
+        <p>
+          Employers can use the
+          <a href="#/employers">
+            Hire Talent
+          </a>
+          section to share their requirement.
+        </p>
+      </details>
+
+      <details class="rv">
+        <summary>
+          What is the difference between permanent recruitment and contract staffing?
+        </summary>
+        <p>
+          Permanent recruitment supports long-term hiring needs, while
+          contract staffing is designed for temporary, project-based or
+          evolving workforce requirements.
+        </p>
+      </details>
+
+      <details class="rv">
+        <summary>
+          How can candidates find opportunities?
+        </summary>
+        <p>
+          Candidates can visit the
+          <a href="#/jobs">
+            Find a Job
+          </a>
+          section to explore current opportunities and apply for relevant roles.
+        </p>
+      </details>
+
+    </div>
+
+  </section>
+
+
+  ${ctaBlock()}
+
+`,
 
 
   /* ================= SERVICE DETAIL ================= */
 
-  service: id => {
+service: id => {
 
-    const s = SV.find(x => x[0] == id) || SV[0];
+  const data = {
 
-    return `
+    "permanent-recruitment": {
+      title: "Permanent Recruitment Services",
+      subtitle: "Permanent hiring solutions for organizations building strong, long-term teams.",
+      eyebrow: "PERMANENT RECRUITMENT",
 
-      ${page(
-        s[1],
-        s[2],
-        `<a class="btn b1" href="#/employers">Talk to Our Experts</a>`
-      )}
+      introTitle: "Find the right talent for long-term business growth.",
+      intro:
+        "Our permanent recruitment service helps organizations identify and hire professionals for full-time roles across functions, experience levels and locations.",
 
-      <section class="sec">
-        <div class="w">
-          <div class="grid g2">
+      description:
+        "We understand the role, business requirement, required skills and experience before sourcing relevant candidates. Our approach is focused on quality, relevance and a structured hiring process.",
 
-            <div class="card">
-              <h3>Key benefits</h3>
-              <ul class="ul">
-                <li>Relevant, screened profiles</li>
-                <li>Faster turnaround</li>
-                <li>Dedicated recruiter support</li>
-              </ul>
+      benefits: [
+        "Role-specific candidate sourcing",
+        "Relevant and screened profiles",
+        "Support across multiple functions and experience levels",
+        "Interview coordination and recruitment support",
+        "Focused hiring for long-term positions",
+        "Ongoing communication throughout the hiring process"
+      ],
+
+      capabilities: [
+        ["01", "Requirement Understanding", "We understand the position, responsibilities, experience, skills, location and business expectations."],
+        ["02", "Candidate Sourcing", "We identify professionals through focused sourcing channels aligned with the requirement."],
+        ["03", "Profile Screening", "Candidate profiles are reviewed for relevant experience, skills, location and role suitability."],
+        ["04", "Shortlisting", "Relevant profiles are shared with the hiring team for further evaluation."],
+        ["05", "Interview Coordination", "We support communication and coordination between candidates and employers."],
+        ["06", "Hiring Support", "We remain connected through the recruitment process to help maintain clear communication."]
+      ],
+
+      roles:
+        "Technology, IT, Sales, Business Development, Banking, Finance, HR, Operations, Customer Support, Marketing, Engineering, Supply Chain and other business functions.",
+
+      faq: [
+        ["What is permanent recruitment?", "Permanent recruitment is focused on hiring professionals for long-term full-time positions within an organization."],
+        ["What type of roles can you recruit for?", "We support hiring across technology, sales, finance, banking, HR, operations, marketing and other business functions."],
+        ["Can you support hiring across India?", "Yes. Recruitment requirements can be supported across locations depending on the role, industry and business requirement."]
+      ]
+    },
+
+
+    "contract-staffing": {
+      title: "Contract Staffing Services",
+      subtitle: "Flexible staffing solutions for project-based, temporary and evolving workforce requirements.",
+      eyebrow: "CONTRACT STAFFING",
+
+      introTitle: "Build workforce flexibility without slowing down your business.",
+      intro:
+        "Our contract staffing services help organizations manage temporary, project-based, seasonal and time-bound workforce requirements.",
+
+      description:
+        "We help businesses identify relevant professionals for defined assignments and changing workforce needs, with recruitment support aligned to the requirement.",
+
+      benefits: [
+        "Flexible workforce support",
+        "Project-based hiring",
+        "Temporary and time-bound staffing",
+        "Faster access to relevant professionals",
+        "Support for changing workforce requirements",
+        "Recruitment coordination and candidate management"
+      ],
+
+      capabilities: [
+        ["01", "Requirement Assessment", "We understand project duration, role requirements, skills, location and workforce expectations."],
+        ["02", "Talent Sourcing", "We source professionals relevant to the required skills and assignment."],
+        ["03", "Screening", "Profiles are reviewed against the defined role and project requirements."],
+        ["04", "Shortlisting", "Relevant candidates are presented to the hiring team."],
+        ["05", "Coordination", "We support interview scheduling and communication during the selection process."],
+        ["06", "Workforce Support", "Our recruitment support can continue as workforce requirements change."]
+      ],
+
+      roles:
+        "IT and technology, project teams, sales, operations, customer support, finance, administration, logistics, manufacturing and other project or business functions.",
+
+      faq: [
+        ["What is contract staffing?", "Contract staffing supports organizations with professionals hired for defined, temporary, project-based or evolving workforce requirements."],
+        ["When should a company consider contract staffing?", "It can be useful when an organization needs additional workforce capacity for projects, temporary requirements, seasonal demand or changing business needs."],
+        ["Can contract staffing support large teams?", "The model can be used for individual positions as well as broader workforce requirements, depending on the hiring need."]
+      ]
+    },
+
+
+    "executive-search": {
+      title: "Executive Search & Leadership Hiring",
+      subtitle: "Focused recruitment support for senior, specialist and business-critical positions.",
+      eyebrow: "EXECUTIVE SEARCH",
+
+      introTitle: "Focused search for roles where the right experience matters.",
+      intro:
+        "Our executive search service supports organizations looking for senior professionals, specialists and leadership talent for business-critical positions.",
+
+      description:
+        "We focus on understanding the role, leadership expectations, functional expertise and business context before identifying relevant professionals.",
+
+      benefits: [
+        "Focused senior-level sourcing",
+        "Leadership and specialist hiring support",
+        "Role-specific candidate identification",
+        "Experience and skill-based screening",
+        "Confidential recruitment coordination",
+        "Support for business-critical positions"
+      ],
+
+      capabilities: [
+        ["01", "Role Understanding", "We understand the position, leadership expectations, responsibilities and business context."],
+        ["02", "Market Mapping", "We identify relevant talent pools and professionals aligned with the requirement."],
+        ["03", "Focused Search", "Candidate identification is centered around experience, expertise and role relevance."],
+        ["04", "Profile Evaluation", "Relevant profiles are reviewed against the key expectations of the position."],
+        ["05", "Candidate Engagement", "We coordinate communication with relevant professionals throughout the process."],
+        ["06", "Hiring Coordination", "We support the employer and candidate through interviews and selection stages."]
+      ],
+
+      roles:
+        "Senior management, business heads, functional leaders, technology leadership, sales leadership, finance leadership, operations leadership and specialist positions.",
+
+      faq: [
+        ["What is executive search?", "Executive search is a focused recruitment approach used for senior, leadership, specialist and business-critical positions."],
+        ["Which positions can be covered?", "The service can support senior management, functional leadership, specialist and other critical roles depending on the requirement."],
+        ["How is executive search different from regular recruitment?", "Executive search generally involves a more focused and targeted approach to identifying professionals for senior or specialist positions."]
+      ]
+    },
+
+
+    "talent-acquisition": {
+      title: "Talent Acquisition Services",
+      subtitle: "Structured talent acquisition support aligned with your organization's hiring priorities.",
+      eyebrow: "TALENT ACQUISITION",
+
+      introTitle: "A structured approach to building the talent pipeline.",
+      intro:
+        "Our talent acquisition services support organizations with planned and ongoing hiring requirements across functions, locations and experience levels.",
+
+      description:
+        "We work around the organization's hiring priorities and help create a structured approach to sourcing, screening, shortlisting and recruitment coordination.",
+
+      benefits: [
+        "Structured recruitment support",
+        "Ongoing talent sourcing",
+        "Hiring pipeline development",
+        "Role-specific candidate screening",
+        "Multi-location hiring support",
+        "Recruitment coordination"
+      ],
+
+      capabilities: [
+        ["01", "Hiring Planning", "We understand current and upcoming hiring requirements and the roles that need to be prioritized."],
+        ["02", "Talent Sourcing", "Candidate sourcing is aligned with the skills and experience required by the organization."],
+        ["03", "Pipeline Building", "Relevant professionals can be identified for immediate as well as ongoing requirements."],
+        ["04", "Screening", "Profiles are reviewed against the organization's defined requirements."],
+        ["05", "Shortlisting", "Relevant candidates are presented for employer evaluation."],
+        ["06", "Hiring Coordination", "We support communication and coordination throughout the recruitment journey."]
+      ],
+
+      roles:
+        "Technology, sales, banking, finance, HR, operations, customer support, marketing, engineering, administration and other organizational functions.",
+
+      faq: [
+        ["What is talent acquisition?", "Talent acquisition is a broader approach to identifying, attracting and hiring talent based on an organization's workforce requirements."],
+        ["Can you support recurring hiring?", "Yes. Talent acquisition support can be structured around ongoing or recurring recruitment requirements."],
+        ["Can talent acquisition cover multiple locations?", "Yes, depending on the organization's hiring requirements and role locations."]
+      ]
+    },
+
+
+    "rpo": {
+      title: "Recruitment Process Outsourcing (RPO)",
+      subtitle: "Structured recruitment process support for organizations seeking scalable hiring capabilities.",
+      eyebrow: "RECRUITMENT PROCESS OUTSOURCING",
+
+      introTitle: "Extend your recruitment capability with structured support.",
+      intro:
+        "Our RPO support helps organizations manage defined parts of their recruitment process or broader hiring requirements through dedicated recruitment support.",
+
+      description:
+        "The engagement can be aligned with hiring volume, role requirements, locations and recruitment objectives, creating a more organized approach to sourcing and candidate management.",
+
+      benefits: [
+        "Scalable recruitment support",
+        "Dedicated recruitment coordination",
+        "High-volume hiring support",
+        "Multi-role recruitment",
+        "Structured candidate pipeline",
+        "Ongoing recruitment process support"
+      ],
+
+      capabilities: [
+        ["01", "Requirement Planning", "We understand hiring volumes, role categories, locations and recruitment priorities."],
+        ["02", "Sourcing", "Candidate sourcing is aligned with the agreed hiring requirements."],
+        ["03", "Screening", "Profiles are reviewed according to defined role criteria."],
+        ["04", "Pipeline Management", "Candidate pipelines can be maintained across multiple requirements."],
+        ["05", "Interview Coordination", "We support communication and coordination across the hiring process."],
+        ["06", "Ongoing Support", "Recruitment support can continue according to the agreed engagement model."]
+      ],
+
+      roles:
+        "High-volume hiring, technology recruitment, sales hiring, operations, customer support, banking, finance, engineering and other recurring recruitment requirements.",
+
+      faq: [
+        ["What is RPO?", "RPO stands for Recruitment Process Outsourcing. It involves outsourcing defined recruitment activities or broader recruitment processes to an external recruitment partner."],
+        ["Can RPO support high-volume hiring?", "Yes. RPO can be structured for organizations managing multiple vacancies or recurring hiring requirements."],
+        ["Is RPO suitable for ongoing recruitment?", "It can be used when an organization needs continuing recruitment support aligned with its workforce requirements."]
+      ]
+    },
+
+
+    "workforce-solutions": {
+      title: "Workforce Solutions",
+      subtitle: "Flexible recruitment and staffing support designed around changing business requirements.",
+      eyebrow: "WORKFORCE SOLUTIONS",
+
+      introTitle: "Workforce support that adapts as business requirements evolve.",
+      intro:
+        "Our workforce solutions combine recruitment and staffing support to help organizations respond to changing talent and workforce requirements.",
+
+      description:
+        "From individual hiring needs to broader workforce requirements, we align recruitment support with the organization's business context, role requirements and workforce objectives.",
+
+      benefits: [
+        "Flexible workforce support",
+        "Permanent and contract hiring",
+        "Multi-function recruitment",
+        "Multi-location hiring support",
+        "Scalable recruitment assistance",
+        "Business-focused hiring coordination"
+      ],
+
+      capabilities: [
+        ["01", "Workforce Assessment", "We understand the organization's hiring requirements, workforce gaps and business priorities."],
+        ["02", "Hiring Strategy", "The recruitment approach is aligned with the type and scale of workforce required."],
+        ["03", "Talent Sourcing", "Relevant professionals are identified across appropriate sourcing channels."],
+        ["04", "Candidate Screening", "Profiles are reviewed against the requirements of each position."],
+        ["05", "Recruitment Coordination", "We support shortlisting, communication and interview coordination."],
+        ["06", "Ongoing Workforce Support", "Recruitment support can adapt as business and workforce requirements change."]
+      ],
+
+      roles:
+        "Permanent hiring, contract staffing, project recruitment, sales, technology, operations, finance, customer support, engineering, administration and other business functions.",
+
+      faq: [
+        ["What are workforce solutions?", "Workforce solutions provide recruitment and staffing support aligned with an organization's changing talent and workforce requirements."],
+        ["Can workforce solutions combine different hiring models?", "Yes. Depending on the requirement, organizations may use permanent recruitment, contract staffing or other recruitment support models."],
+        ["Can you support multi-location hiring?", "Yes, depending on the role, industry, location and overall workforce requirement."]
+      ]
+    }
+
+  };
+
+
+  const d = data[id] || data["permanent-recruitment"];
+
+
+  return `
+
+    ${page(
+      d.title,
+      d.subtitle,
+      `
+        <a class="btn b1" href="#/employers">
+          Hire Talent
+        </a>
+
+        <a class="btn b3" href="#/contact">
+          Talk to Our Experts
+        </a>
+      `
+    )}
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="sec">
+
+      <div class="w">
+
+        <div class="service-detail-intro-grid">
+
+          <div class="rv">
+
+            <div class="eb">
+              ${d.eyebrow}
             </div>
 
-            <div class="card">
-              <h3>Our process</h3>
-              <ul class="ul">
-                ${ST.map(x => `<li><b>${x[0]}:</b> ${x[1]}</li>`).join("")}
-              </ul>
+            <h2>
+              ${d.introTitle}
+            </h2>
+
+          </div>
+
+
+          <div class="service-detail-intro-copy rv">
+
+            <p class="large">
+              ${d.intro}
+            </p>
+
+            <p>
+              ${d.description}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BENEFITS -->
+
+    <section class="sec alt">
+
+      <div class="w">
+
+        <div class="service-detail-section-heading rv">
+
+          <div>
+            <div class="eb">
+              WHY THIS SERVICE
+            </div>
+
+            <h2>
+              Built around the way your organization hires.
+            </h2>
+          </div>
+
+          <p>
+            Our approach focuses on relevance, structured recruitment
+            and clear coordination throughout the hiring process.
+          </p>
+
+        </div>
+
+
+        <div class="service-benefit-grid">
+
+          ${d.benefits.map((x, i) => `
+
+            <article class="service-benefit-card rv">
+
+              <span>
+                ${String(i + 1).padStart(2, "0")}
+              </span>
+
+              <h3>
+                ${x}
+              </h3>
+
+            </article>
+
+          `).join("")}
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CAPABILITIES -->
+
+    <section class="sec">
+
+      <div class="w">
+
+        ${sh(
+          "OUR APPROACH",
+          "How we support this hiring requirement.",
+          "A structured recruitment process helps keep requirements, candidates and hiring teams aligned."
+        )}
+
+
+        <div class="service-capability-grid">
+
+          ${d.capabilities.map(x => `
+
+            <article class="service-capability-card rv">
+
+              <div class="service-capability-number">
+                ${x[0]}
+              </div>
+
+              <div>
+
+                <div class="service-capability-label">
+                  ${x[1]}
+                </div>
+
+                <p>
+                  ${x[2]}
+                </p>
+
+              </div>
+
+            </article>
+
+          `).join("")}
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+
+    <section class="sec alt">
+
+      <div class="w">
+
+        ${sh(
+          "RECRUITMENT PROCESS",
+          "From requirement to the right connection.",
+          "Our process is designed to create clarity at every stage of the hiring journey."
+        )}
+
+
+        <div class="service-process-grid">
+
+          ${[
+            ["01", "DISCOVER", "Understand the requirement"],
+            ["02", "SOURCE", "Identify relevant professionals"],
+            ["03", "SCREEN", "Evaluate candidate suitability"],
+            ["04", "SHORTLIST", "Present relevant profiles"],
+            ["05", "CONNECT", "Coordinate interviews"],
+            ["06", "SUPPORT", "Stay connected through the process"]
+          ].map(x => `
+
+            <div class="service-process-card rv">
+
+              <span>${x[0]}</span>
+
+              <small>${x[1]}</small>
+
+              <h3>${x[2]}</h3>
+
+            </div>
+
+          `).join("")}
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROLES -->
+
+    <section class="sec">
+
+      <div class="w">
+
+        <div class="service-roles-box rv">
+
+          <div>
+
+            <div class="eb">
+              ROLES & FUNCTIONS
+            </div>
+
+            <h2>
+              Recruitment support across business functions.
+            </h2>
+
+          </div>
+
+          <p>
+            ${d.roles}
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY ACE -->
+
+    <section class="sec alt">
+
+      <div class="w">
+
+        <div class="service-why-grid">
+
+          <div class="rv">
+
+            <div class="eb">
+              WHY ACE TALENT CONSULTING
+            </div>
+
+            <h2>
+              A focused recruitment partner for your hiring requirements.
+            </h2>
+
+          </div>
+
+
+          <div class="service-why-list">
+
+            <div class="service-why-item rv">
+              <span>01</span>
+              <div>
+                <h3>Requirement-focused approach</h3>
+                <p>
+                  We start with understanding the role and business requirement.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-why-item rv">
+              <span>02</span>
+              <div>
+                <h3>Relevant candidate sourcing</h3>
+                <p>
+                  Sourcing is aligned with the skills, experience and location required.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-why-item rv">
+              <span>03</span>
+              <div>
+                <h3>Structured screening</h3>
+                <p>
+                  Candidate profiles are reviewed against relevant role expectations.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-why-item rv">
+              <span>04</span>
+              <div>
+                <h3>Clear coordination</h3>
+                <p>
+                  We support communication between employers and candidates throughout the process.
+                </p>
+              </div>
             </div>
 
           </div>
+
         </div>
-      </section>
 
-      ${ctaBlock()}
+      </div>
 
-    `;
-  },
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="sec">
+
+      <div class="w service-faq">
+
+        ${sh(
+          "FREQUENTLY ASKED QUESTIONS",
+          d.title,
+          "Common questions about this recruitment service."
+        )}
+
+
+        ${d.faq.map(x => `
+
+          <details class="rv">
+
+            <summary>
+              ${x[0]}
+            </summary>
+
+            <p>
+              ${x[1]}
+            </p>
+
+          </details>
+
+        `).join("")}
+
+      </div>
+
+    </section>
+
+
+    ${ctaBlock()}
+
+  `;
+},
 
 
   /* ================= INDUSTRIES ================= */
