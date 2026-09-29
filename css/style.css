@@ -46,7 +46,10 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 400 16px/1.65 Outfit, system-ui, sans-serif;
+  font:
+    400 16px/1.65 Outfit,
+    system-ui,
+    sans-serif;
   overflow-x: hidden;
 }
 
@@ -63,8 +66,8 @@ h1,
 h2,
 h3 {
   line-height: 1.12;
-  margin: 0 0 .5em;
-  letter-spacing: -.02em;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.02em;
   font-weight: 700;
 }
 
@@ -116,10 +119,15 @@ p {
   min-height: 48px;
   padding: 0 24px;
   border-radius: 999px;
-  font: 600 1rem Outfit, sans-serif;
+  font:
+    600 1rem Outfit,
+    sans-serif;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: transform .2s, background .2s, box-shadow .2s;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
 }
 
 .btn:hover {
@@ -132,7 +140,7 @@ p {
 }
 
 .b1:hover {
-  box-shadow: 0 8px 24px rgba(255, 176, 32, .35);
+  box-shadow: 0 8px 24px rgba(255, 176, 32, 0.35);
 }
 
 .b2 {
@@ -150,7 +158,7 @@ p {
 }
 
 .btn:disabled {
-  opacity: .6;
+  opacity: 0.6;
   cursor: wait;
 }
 
@@ -166,17 +174,11 @@ p {
 }
 
 .g3 {
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 290px), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
 }
 
 .g2 {
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 420px), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
 }
 
 /* =========================
@@ -186,7 +188,7 @@ p {
 .eb {
   color: var(--blue);
   font-weight: 600;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 .sh {
@@ -208,13 +210,15 @@ p {
   border: 1px solid var(--line);
   border-radius: var(--r, 20px);
   padding: 28px;
-  transition: transform .25s, box-shadow .25s;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
 }
 
 a.card:hover,
 .card.h:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(10, 26, 63, .12);
+  box-shadow: 0 18px 40px rgba(10, 26, 63, 0.12);
 }
 
 .ph {
@@ -235,7 +239,7 @@ a.card:hover,
   position: absolute;
   left: 12px;
   bottom: 10px;
-  font-size: .78rem;
+  font-size: 0.78rem;
   color: #ffffffb0;
 }
 
@@ -287,7 +291,7 @@ header,
 .logo {
   font-weight: 800;
   font-size: 1.25rem;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
   line-height: 1.05;
 }
 
@@ -297,9 +301,9 @@ header,
 
 .logo small {
   display: block;
-  font-size: .62rem;
+  font-size: 0.62rem;
   font-weight: 500;
-  letter-spacing: .14em;
+  letter-spacing: 0.14em;
   color: var(--mut);
 }
 
@@ -336,14 +340,14 @@ nav a.t:hover {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .14);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
 }
 
 .menu a {
   display: block;
   padding: 9px 12px;
   border-radius: 10px;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .menu a:hover {
@@ -366,7 +370,7 @@ nav a.t:hover {
 .ha .btn {
   min-height: 42px;
   padding: 0 17px;
-  font-size: .88rem;
+  font-size: 0.88rem;
 }
 
 .bg {
@@ -443,7 +447,7 @@ nav a.t:hover {
   width: 100%;
   height: 1px;
   background: #1f5bff;
-  opacity: .35;
+  opacity: 0.35;
 }
 
 /* =========================
@@ -482,7 +486,7 @@ nav a.t:hover {
   object-fit: cover;
   opacity: 1;
   z-index: 0;
-  filter: brightness(.72) saturate(.85);
+  filter: brightness(0.72) saturate(0.85);
 }
 
 .hero::after {
@@ -493,9 +497,9 @@ nav a.t:hover {
   pointer-events: none;
   background: linear-gradient(
     90deg,
-    rgba(5, 18, 45, .82) 0%,
-    rgba(5, 18, 45, .58) 45%,
-    rgba(5, 18, 45, .35) 100%
+    rgba(5, 18, 45, 0.82) 0%,
+    rgba(5, 18, 45, 0.58) 45%,
+    rgba(5, 18, 45, 0.35) 100%
   );
 }
 
@@ -530,7 +534,7 @@ nav a.t:hover {
 .tag {
   margin-top: 22px;
   color: #fff;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .hv {
@@ -549,7 +553,7 @@ nav a.t:hover {
   border-radius: 14px;
   padding: 12px 16px;
   font-weight: 600;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, .28);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
   animation: fl 6s ease-in-out infinite;
 }
 
@@ -557,7 +561,7 @@ nav a.t:hover {
   display: block;
   color: var(--mut);
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .f1 {
@@ -616,7 +620,7 @@ nav a.t:hover {
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 20px;
-  box-shadow: 0 24px 60px rgba(10, 26, 63, .16);
+  box-shadow: 0 24px 60px rgba(10, 26, 63, 0.16);
   display: grid;
   grid-template-columns: repeat(4, 1fr) auto;
   gap: 12px;
@@ -641,7 +645,7 @@ nav a.t:hover {
 
 label {
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: block;
   margin-bottom: 6px;
 }
@@ -673,10 +677,7 @@ textarea:focus {
 
 .st {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
@@ -721,7 +722,7 @@ textarea:focus {
   border-radius: 999px;
   padding: 2px 12px;
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .step h3 {
@@ -730,7 +731,7 @@ textarea:focus {
 }
 
 .step p {
-  font-size: .93rem;
+  font-size: 0.93rem;
 }
 
 @media (max-width: 980px) {
@@ -781,7 +782,7 @@ textarea:focus {
   color: var(--blue);
   border-radius: 999px;
   padding: 3px 12px;
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
@@ -855,7 +856,7 @@ textarea:focus {
 
 .em {
   color: #d92d20;
-  font-size: .85rem;
+  font-size: 0.85rem;
   min-height: 1.1em;
 }
 
@@ -1033,7 +1034,7 @@ footer a:hover {
   flex-wrap: wrap;
   gap: 12px;
   justify-content: space-between;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .ul {
@@ -1052,7 +1053,9 @@ footer a:hover {
 .rv {
   opacity: 0;
   transform: translateY(18px);
-  transition: opacity .6s, transform .6s;
+  transition:
+    opacity 0.6s,
+    transform 0.6s;
 }
 
 .rv.in {
@@ -1094,7 +1097,7 @@ footer a:hover {
   perspective: 1200px;
   text-decoration: none;
   color: inherit;
-  transition: transform .25s ease;
+  transition: transform 0.25s ease;
 }
 
 .industry-card:hover {
@@ -1107,9 +1110,9 @@ footer a:hover {
   inset: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transition: transform .6s ease;
-  border: 1px solid rgba(10, 26, 63, .10);
-  box-shadow: 0 8px 25px rgba(10, 26, 63, .06);
+  transition: transform 0.6s ease;
+  border: 1px solid rgba(10, 26, 63, 0.1);
+  box-shadow: 0 8px 25px rgba(10, 26, 63, 0.06);
 }
 
 .industry-front {
@@ -1142,7 +1145,7 @@ footer a:hover {
   display: block;
   object-fit: cover;
   object-position: center;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .industry-card:hover .industry-image img {
@@ -1279,12 +1282,8 @@ footer a:hover {
   .hero {
     min-height: 560px;
     background:
-      linear-gradient(
-        rgba(5, 18, 45, .55),
-        rgba(5, 18, 45, .55)
-      ),
-      url("../images/hero-poster.jpg")
-      center center / cover no-repeat;
+      linear-gradient(rgba(5, 18, 45, 0.55), rgba(5, 18, 45, 0.55)),
+      url("../images/hero-poster.jpg") center center / cover no-repeat;
   }
 
   .hg {
@@ -1292,7 +1291,7 @@ footer a:hover {
   }
 
   .hero::after {
-    background: rgba(5, 18, 45, .25);
+    background: rgba(5, 18, 45, 0.25);
   }
 }
 /* =========================================================
@@ -1316,7 +1315,6 @@ footer a:hover {
   color: var(--mut);
 }
 
-
 /* 3 COLUMN GRID */
 
 .industry-grid {
@@ -1325,7 +1323,6 @@ footer a:hover {
   gap: 24px;
   width: 100%;
 }
-
 
 /* MAIN CARD */
 
@@ -1343,7 +1340,6 @@ footer a:hover {
   padding: 0;
 }
 
-
 /* FRONT + BACK */
 
 .industry-front,
@@ -1356,18 +1352,17 @@ footer a:hover {
   overflow: hidden;
 
   background: #ffffff;
-  border: 1px solid rgba(10, 26, 63, .10);
+  border: 1px solid rgba(10, 26, 63, 0.1);
 
-  box-shadow: 0 8px 28px rgba(10, 26, 63, .07);
+  box-shadow: 0 8px 28px rgba(10, 26, 63, 0.07);
 
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 
   transition:
-    transform .65s cubic-bezier(.2,.7,.2,1),
-    box-shadow .25s ease;
+    transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 0.25s ease;
 }
-
 
 /* FRONT */
 
@@ -1375,7 +1370,6 @@ footer a:hover {
   z-index: 2;
   transform: rotateY(0deg);
 }
-
 
 /* BACK */
 
@@ -1391,7 +1385,6 @@ footer a:hover {
   transform: rotateY(180deg);
 }
 
-
 /* IMAGE */
 
 .industry-image {
@@ -1403,7 +1396,6 @@ footer a:hover {
   background: #edf1f7;
 }
 
-
 .industry-image img {
   width: 100%;
   height: 100%;
@@ -1413,16 +1405,14 @@ footer a:hover {
   object-fit: cover;
   object-position: center;
 
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
-
 
 /* IMAGE HOVER */
 
 .industry-card:hover .industry-image img {
   transform: scale(1.04);
 }
-
 
 /* INDUSTRY NAME BELOW IMAGE */
 
@@ -1444,7 +1434,6 @@ footer a:hover {
   font-weight: 700;
 }
 
-
 /* BACK SIDE NUMBER */
 
 .industry-number {
@@ -1458,7 +1447,6 @@ footer a:hover {
   letter-spacing: 2px;
 }
 
-
 /* BACK SIDE TITLE */
 
 .industry-back h3 {
@@ -1469,7 +1457,6 @@ footer a:hover {
   font-size: 23px;
   line-height: 1.25;
 }
-
 
 /* BACK SIDE DESCRIPTION */
 
@@ -1482,7 +1469,6 @@ footer a:hover {
   line-height: 1.7;
 }
 
-
 /* BACK SIDE LINK */
 
 .industry-back span {
@@ -1491,7 +1477,6 @@ footer a:hover {
   font-size: 13px;
   font-weight: 700;
 }
-
 
 /* FLIP */
 
@@ -1503,20 +1488,17 @@ footer a:hover {
   transform: rotateY(0deg);
 }
 
-
 /* CARD LIFT */
 
 .industry-card:hover {
   transform: translateY(-4px);
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
-
   .industry-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
@@ -1533,16 +1515,13 @@ footer a:hover {
   .industry-name {
     height: 85px;
   }
-
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
-
   .industry-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1575,21 +1554,17 @@ footer a:hover {
   .industry-card:hover .industry-back {
     transform: rotateY(180deg);
   }
-
 }
-
 
 /* =========================================================
    REDUCED MOTION
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-
   .industry-front,
   .industry-back {
     transition: none;
   }
-
 }
 /* =========================================================
    WHY ACE - PREMIUM SPLIT SECTION
@@ -1641,14 +1616,14 @@ footer a:hover {
   display: flex;
   gap: 0;
   margin-top: 45px;
-  border-top: 1px solid rgba(10,26,63,.15);
-  border-bottom: 1px solid rgba(10,26,63,.15);
+  border-top: 1px solid rgba(10, 26, 63, 0.15);
+  border-bottom: 1px solid rgba(10, 26, 63, 0.15);
 }
 
 .why-ace-stats > div {
   flex: 1;
   padding: 20px 16px 20px 0;
-  border-right: 1px solid rgba(10,26,63,.15);
+  border-right: 1px solid rgba(10, 26, 63, 0.15);
 }
 
 .why-ace-stats > div:last-child {
@@ -1674,7 +1649,7 @@ footer a:hover {
 /* RIGHT */
 
 .why-ace-points {
-  border-top: 1px solid rgba(10,26,63,.15);
+  border-top: 1px solid rgba(10, 26, 63, 0.15);
 }
 
 .why-point {
@@ -1683,8 +1658,8 @@ footer a:hover {
   gap: 20px;
   align-items: start;
   padding: 27px 0;
-  border-bottom: 1px solid rgba(10,26,63,.15);
-  transition: all .25s ease;
+  border-bottom: 1px solid rgba(10, 26, 63, 0.15);
+  transition: all 0.25s ease;
 }
 
 .why-point:hover {
@@ -1721,11 +1696,11 @@ footer a:hover {
   font-size: 20px;
   font-weight: 400;
   padding-top: 1px;
-  transition: transform .25s ease;
+  transition: transform 0.25s ease;
 }
 
 .why-point:hover b {
-  transform: translate(4px,-4px);
+  transform: translate(4px, -4px);
 }
 
 /* CTA */
@@ -1743,7 +1718,7 @@ footer a:hover {
 .why-ace-cta small {
   display: block;
   margin-bottom: 8px;
-  color: rgba(255,255,255,.55);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 1.8px;
@@ -1758,7 +1733,6 @@ footer a:hover {
 /* MOBILE */
 
 @media (max-width: 900px) {
-
   .why-ace-layout {
     grid-template-columns: 1fr;
     gap: 55px;
@@ -1767,11 +1741,9 @@ footer a:hover {
   .why-ace-intro {
     position: static;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .why-ace-new {
     padding: 70px 0;
   }
@@ -1812,7 +1784,6 @@ footer a:hover {
     align-items: flex-start;
     flex-direction: column;
   }
-
 }
 /* =========================================================
    WHY ACE - RECRUITMENT FLOW DESIGN
@@ -1873,13 +1844,12 @@ footer a:hover {
 
 .why-text-link span {
   font-size: 18px;
-  transition: transform .25s ease;
+  transition: transform 0.25s ease;
 }
 
 .why-text-link:hover span {
-  transform: translate(4px,-4px);
+  transform: translate(4px, -4px);
 }
-
 
 /* =========================================================
    PROCESS FLOW
@@ -1898,11 +1868,7 @@ footer a:hover {
   top: 45px;
   bottom: 45px;
   width: 1px;
-  background: linear-gradient(
-    to bottom,
-    var(--blue),
-    rgba(10,26,63,.12)
-  );
+  background: linear-gradient(to bottom, var(--blue), rgba(10, 26, 63, 0.12));
 }
 
 .flow-item {
@@ -1928,8 +1894,8 @@ footer a:hover {
   align-items: center;
   border-radius: 50%;
   background: #fff;
-  border: 1px solid rgba(10,26,63,.16);
-  box-shadow: 0 8px 25px rgba(10,26,63,.08);
+  border: 1px solid rgba(10, 26, 63, 0.16);
+  box-shadow: 0 8px 25px rgba(10, 26, 63, 0.08);
 }
 
 .flow-marker span {
@@ -1967,7 +1933,6 @@ footer a:hover {
   line-height: 1.75;
 }
 
-
 /* =========================================================
    BOTTOM HIGHLIGHTS
    ========================================================= */
@@ -1976,8 +1941,8 @@ footer a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 90px;
-  border-top: 1px solid rgba(10,26,63,.15);
-  border-bottom: 1px solid rgba(10,26,63,.15);
+  border-top: 1px solid rgba(10, 26, 63, 0.15);
+  border-bottom: 1px solid rgba(10, 26, 63, 0.15);
 }
 
 .flow-stat {
@@ -1985,7 +1950,7 @@ footer a:hover {
   align-items: center;
   gap: 18px;
   padding: 25px 20px 25px 0;
-  border-right: 1px solid rgba(10,26,63,.15);
+  border-right: 1px solid rgba(10, 26, 63, 0.15);
 }
 
 .flow-stat:not(:first-child) {
@@ -2009,7 +1974,6 @@ footer a:hover {
   font-weight: 700;
 }
 
-
 /* =========================================================
    HOVER EFFECT
    ========================================================= */
@@ -2025,24 +1989,22 @@ footer a:hover {
 }
 
 .flow-marker {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .flow-content h3 {
-  transition: color .25s ease;
+  transition: color 0.25s ease;
 }
 
 .flow-item:hover .flow-content h3 {
   color: var(--blue);
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
-
   .why-flow {
     padding: 80px 0;
   }
@@ -2067,18 +2029,15 @@ footer a:hover {
 
   .flow-stat:nth-child(3),
   .flow-stat:nth-child(4) {
-    border-top: 1px solid rgba(10,26,63,.15);
+    border-top: 1px solid rgba(10, 26, 63, 0.15);
   }
-
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
-
   .why-flow {
     padding: 65px 0;
   }
@@ -2141,7 +2100,6 @@ footer a:hover {
   .flow-stat:not(:first-child) {
     padding-left: 15px;
   }
-
 }
 /* =====================================================
    ACE PREMIUM ACTION BAR - FINAL
@@ -2176,12 +2134,10 @@ footer a:hover {
 
   overflow: hidden !important;
 
-  box-shadow:
-    0 25px 65px rgba(7, 20, 47, 0.16) !important;
+  box-shadow: 0 25px 65px rgba(7, 20, 47, 0.16) !important;
 
   border: 1px solid rgba(10, 26, 63, 0.06) !important;
 }
-
 
 /* -----------------------------
    COLUMNS
@@ -2205,11 +2161,9 @@ footer a:hover {
   background: #fff !important;
 }
 
-
 .ace-premium-item + .ace-premium-item {
-  border-left: 1px solid rgba(10, 26, 63, 0.10) !important;
+  border-left: 1px solid rgba(10, 26, 63, 0.1) !important;
 }
-
 
 /* -----------------------------
    ICON CIRCLE
@@ -2231,24 +2185,20 @@ footer a:hover {
   font-weight: 700 !important;
 }
 
-
 .ace-blue-icon {
   background: #edf3ff !important;
   color: #2861ed !important;
 }
-
 
 .ace-purple-icon {
   background: #f0edff !important;
   color: #6957e8 !important;
 }
 
-
 .ace-green-icon {
   background: #e5f8ef !important;
   color: #13a873 !important;
 }
-
 
 /* -----------------------------
    TEXT
@@ -2257,7 +2207,6 @@ footer a:hover {
 .ace-premium-info {
   min-width: 0 !important;
 }
-
 
 .ace-premium-label {
   margin: 0 0 9px !important;
@@ -2271,7 +2220,6 @@ footer a:hover {
 
   line-height: 1.2 !important;
 }
-
 
 .ace-premium-title {
   display: block !important;
@@ -2289,11 +2237,9 @@ footer a:hover {
   text-decoration: none !important;
 }
 
-
 .ace-premium-title:hover {
   color: #2861ed !important;
 }
-
 
 .ace-premium-info p {
   margin: 10px 0 0 !important;
@@ -2304,7 +2250,6 @@ footer a:hover {
 
   line-height: 1.6 !important;
 }
-
 
 /* -----------------------------
    ARROW
@@ -2326,9 +2271,8 @@ footer a:hover {
 
   text-decoration: none !important;
 
-  transition: all .25s ease !important;
+  transition: all 0.25s ease !important;
 }
-
 
 .ace-premium-arrow:hover {
   background: #2861ed !important;
@@ -2336,7 +2280,6 @@ footer a:hover {
 
   transform: translateX(4px) !important;
 }
-
 
 /* -----------------------------
    WHATSAPP BUTTON
@@ -2367,51 +2310,43 @@ footer a:hover {
   font-size: 15px !important;
   font-weight: 700 !important;
 
-  transition: all .25s ease !important;
+  transition: all 0.25s ease !important;
 }
-
 
 .ace-whatsapp-link b {
   font-size: 20px !important;
   font-weight: 400 !important;
 
-  transition: transform .25s ease !important;
+  transition: transform 0.25s ease !important;
 }
-
 
 .ace-whatsapp-link:hover {
   background: #159f68 !important;
 
   transform: translateY(-2px) !important;
 
-  box-shadow: 0 10px 25px rgba(32,184,121,.25) !important;
+  box-shadow: 0 10px 25px rgba(32, 184, 121, 0.25) !important;
 }
-
 
 .ace-whatsapp-link:hover b {
   transform: translateX(5px) !important;
 }
-
 
 /* -----------------------------
    DESKTOP WIDTH
 ----------------------------- */
 
 @media (min-width: 1200px) {
-
   .ace-premium-item {
     min-height: 195px !important;
   }
-
 }
-
 
 /* -----------------------------
    TABLET
 ----------------------------- */
 
 @media (max-width: 1000px) {
-
   .ace-premium-bar {
     margin-top: -45px !important;
   }
@@ -2429,18 +2364,15 @@ footer a:hover {
 
     border-left: 0 !important;
 
-    border-top: 1px solid rgba(10, 26, 63, 0.10) !important;
+    border-top: 1px solid rgba(10, 26, 63, 0.1) !important;
   }
-
 }
-
 
 /* -----------------------------
    MOBILE
 ----------------------------- */
 
 @media (max-width: 650px) {
-
   .ace-premium-bar {
     margin-top: -25px !important;
   }
@@ -2466,7 +2398,7 @@ footer a:hover {
   .ace-premium-item + .ace-premium-item {
     border-left: 0 !important;
 
-    border-top: 1px solid rgba(10, 26, 63, 0.10) !important;
+    border-top: 1px solid rgba(10, 26, 63, 0.1) !important;
   }
 
   .ace-premium-icon {
@@ -2481,7 +2413,6 @@ footer a:hover {
   .ace-premium-title {
     font-size: 17px !important;
   }
-
 }
 /* =====================================================
    HIRING REQUIREMENTS POPUP
@@ -2503,18 +2434,16 @@ footer a:hover {
   display: flex;
 }
 
-
 /* OVERLAY */
 
 .hiring-overlay {
   position: absolute;
   inset: 0;
 
-  background: rgba(4, 14, 32, .68);
+  background: rgba(4, 14, 32, 0.68);
 
   backdrop-filter: blur(5px);
 }
-
 
 /* MODAL */
 
@@ -2534,27 +2463,22 @@ footer a:hover {
 
   border-radius: 18px;
 
-  box-shadow:
-    0 30px 90px rgba(0,0,0,.28);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
 
-  animation: hiringModalIn .28s ease;
+  animation: hiringModalIn 0.28s ease;
 }
 
-
 @keyframes hiringModalIn {
-
   from {
     opacity: 0;
-    transform: translateY(15px) scale(.98);
+    transform: translateY(15px) scale(0.98);
   }
 
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-
 }
-
 
 /* CLOSE */
 
@@ -2579,14 +2503,13 @@ footer a:hover {
 
   cursor: pointer;
 
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .hiring-close:hover {
   background: #f1f4f8;
   color: #07142f;
 }
-
 
 /* HEADER */
 
@@ -2598,7 +2521,6 @@ footer a:hover {
 
   padding-right: 35px;
 }
-
 
 .hiring-header-icon {
   width: 50px;
@@ -2615,7 +2537,6 @@ footer a:hover {
   background: #17477f;
 }
 
-
 .hiring-header-icon svg {
   width: 26px;
   height: 26px;
@@ -2631,7 +2552,6 @@ footer a:hover {
   stroke-linejoin: round;
 }
 
-
 .hiring-header-content h2 {
   margin: 0 0 7px;
 
@@ -2643,7 +2563,6 @@ footer a:hover {
 
   font-weight: 800;
 }
-
 
 .hiring-badge {
   display: inline-flex;
@@ -2666,7 +2585,6 @@ footer a:hover {
   font-weight: 700;
 }
 
-
 .hiring-badge span {
   width: 8px;
   height: 8px;
@@ -2678,7 +2596,6 @@ footer a:hover {
   box-shadow: 0 0 0 4px #dff5e9;
 }
 
-
 /* DIVIDER */
 
 .hiring-divider {
@@ -2688,7 +2605,6 @@ footer a:hover {
 
   background: #d8e0eb;
 }
-
 
 /* FORM */
 
@@ -2700,7 +2616,6 @@ footer a:hover {
   gap: 16px;
 }
 
-
 .hiring-row {
   display: grid;
 
@@ -2709,11 +2624,9 @@ footer a:hover {
   gap: 15px;
 }
 
-
 .hiring-field {
   min-width: 0;
 }
-
 
 .hiring-field label {
   display: block;
@@ -2727,13 +2640,11 @@ footer a:hover {
   font-weight: 800;
 }
 
-
 .hiring-field label em {
   color: #f15a24;
 
   font-style: normal;
 }
-
 
 /* INPUT */
 
@@ -2743,7 +2654,6 @@ footer a:hover {
   display: flex;
   align-items: center;
 }
-
 
 .hiring-input-wrap svg {
   position: absolute;
@@ -2765,7 +2675,6 @@ footer a:hover {
 
   pointer-events: none;
 }
-
 
 .hiring-input-wrap input {
   width: 100%;
@@ -2790,24 +2699,20 @@ footer a:hover {
 
   font-size: 15px;
 
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
-
 
 .hiring-input-wrap input::placeholder {
   color: #91a0b8;
 }
-
 
 .hiring-input-wrap input:focus {
   border-color: #3976bb;
 
   background: #fff;
 
-  box-shadow:
-    0 0 0 3px rgba(57,118,187,.10);
+  box-shadow: 0 0 0 3px rgba(57, 118, 187, 0.1);
 }
-
 
 /* SUBMIT */
 
@@ -2840,22 +2745,18 @@ footer a:hover {
 
   cursor: pointer;
 
-  box-shadow:
-    0 10px 25px rgba(242,90,10,.22);
+  box-shadow: 0 10px 25px rgba(242, 90, 10, 0.22);
 
-  transition: .25s ease;
+  transition: 0.25s ease;
 }
-
 
 .hiring-submit:hover {
   background: #df4e05;
 
   transform: translateY(-1px);
 
-  box-shadow:
-    0 14px 30px rgba(242,90,10,.28);
+  box-shadow: 0 14px 30px rgba(242, 90, 10, 0.28);
 }
-
 
 .hiring-submit svg {
   width: 22px;
@@ -2871,7 +2772,6 @@ footer a:hover {
 
   stroke-linejoin: round;
 }
-
 
 /* TRUST */
 
@@ -2894,7 +2794,6 @@ footer a:hover {
   font-size: 13px;
 }
 
-
 .hiring-trust span {
   display: inline-flex;
 
@@ -2905,14 +2804,12 @@ footer a:hover {
   white-space: nowrap;
 }
 
-
 .hiring-trust i {
   width: 1px;
   height: 15px;
 
   background: #b9c5d5;
 }
-
 
 .hiring-trust svg {
   width: 15px;
@@ -2929,13 +2826,11 @@ footer a:hover {
   stroke-linejoin: round;
 }
 
-
 /* =====================================================
    MOBILE
 ===================================================== */
 
 @media (max-width: 650px) {
-
   .hiring-popup {
     padding: 10px;
   }
@@ -2988,7 +2883,6 @@ footer a:hover {
   .hiring-trust i {
     height: 12px;
   }
-
 }
 /* =====================================================
    HIRING REQUIREMENTS POPUP
@@ -3026,16 +2920,15 @@ footer a:hover {
 
   padding: 30px 28px 20px;
 
-  box-shadow:
-    0 30px 90px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3);
 
-  animation: hiringPopupIn .25s ease;
+  animation: hiringPopupIn 0.25s ease;
 }
 
 @keyframes hiringPopupIn {
   from {
     opacity: 0;
-    transform: translateY(18px) scale(.97);
+    transform: translateY(18px) scale(0.97);
   }
 
   to {
@@ -3043,7 +2936,6 @@ footer a:hover {
     transform: translateY(0) scale(1);
   }
 }
-
 
 /* CLOSE BUTTON */
 
@@ -3073,7 +2965,6 @@ footer a:hover {
   background: #f1f4f8;
   color: #0b376d;
 }
-
 
 /* HEADER */
 
@@ -3149,7 +3040,6 @@ footer a:hover {
   background: #16a765;
 }
 
-
 /* DIVIDER */
 
 .hiring-divider {
@@ -3159,7 +3049,6 @@ footer a:hover {
 
   background: #d7e0eb;
 }
-
 
 /* FORM */
 
@@ -3198,7 +3087,6 @@ footer a:hover {
 
   font-style: normal;
 }
-
 
 /* INPUT */
 
@@ -3249,9 +3137,9 @@ footer a:hover {
   font-size: 14px;
 
   transition:
-    border-color .2s ease,
-    background .2s ease,
-    box-shadow .2s ease;
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .hiring-input-wrap input::placeholder {
@@ -3263,10 +3151,8 @@ footer a:hover {
 
   background: #ffffff;
 
-  box-shadow:
-    0 0 0 3px rgba(57, 118, 187, .10);
+  box-shadow: 0 0 0 3px rgba(57, 118, 187, 0.1);
 }
-
 
 /* SUBMIT BUTTON */
 
@@ -3296,19 +3182,17 @@ footer a:hover {
 
   cursor: pointer;
 
-  box-shadow:
-    0 10px 25px rgba(242, 90, 10, .20);
+  box-shadow: 0 10px 25px rgba(242, 90, 10, 0.2);
 
   transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .hiring-submit:hover {
   transform: translateY(-2px);
 
-  box-shadow:
-    0 14px 30px rgba(242, 90, 10, .28);
+  box-shadow: 0 14px 30px rgba(242, 90, 10, 0.28);
 }
 
 .hiring-submit svg {
@@ -3323,7 +3207,6 @@ footer a:hover {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-
 
 /* TRUST ROW */
 
@@ -3371,7 +3254,6 @@ footer a:hover {
   background: #c7d0dc;
 }
 
-
 /* =====================================================
    HIRING CTA BOX
 ===================================================== */
@@ -3390,8 +3272,7 @@ footer a:hover {
 
   border-radius: 22px !important;
 
-  box-shadow:
-    0 18px 45px rgba(8, 25, 60, .12) !important;
+  box-shadow: 0 18px 45px rgba(8, 25, 60, 0.12) !important;
 }
 
 .ace-trigger-content {
@@ -3451,11 +3332,9 @@ footer a:hover {
   line-height: 1.5;
 }
 
-
 /* MOBILE */
 
 @media (max-width: 700px) {
-
   .hiring-popup {
     padding: 12px;
   }
@@ -3488,7 +3367,6 @@ footer a:hover {
 
     align-items: stretch !important;
   }
-
 }
 /* CLIENT LOGO MARQUEE */
 
@@ -3549,10 +3427,10 @@ footer a:hover {
   justify-content: center;
 
   background: #fff;
-  border: 1px solid rgba(10,26,63,.08);
+  border: 1px solid rgba(10, 26, 63, 0.08);
   border-radius: 8px;
 
-  box-shadow: 0 6px 22px rgba(10,26,63,.05);
+  box-shadow: 0 6px 22px rgba(10, 26, 63, 0.05);
 }
 
 .client-logo img {
@@ -3564,13 +3442,11 @@ footer a:hover {
   object-fit: contain;
 }
 
-
 /* LEFT → RIGHT */
 
 .logo-track-ltr {
   animation: clientLTR 30s linear infinite;
 }
-
 
 /* RIGHT → LEFT */
 
@@ -3578,9 +3454,7 @@ footer a:hover {
   animation: clientRTL 30s linear infinite;
 }
 
-
 @keyframes clientLTR {
-
   from {
     transform: translateX(-50%);
   }
@@ -3588,12 +3462,9 @@ footer a:hover {
   to {
     transform: translateX(0);
   }
-
 }
-
 
 @keyframes clientRTL {
-
   from {
     transform: translateX(0);
   }
@@ -3601,14 +3472,11 @@ footer a:hover {
   to {
     transform: translateX(-50%);
   }
-
 }
-
 
 /* MOBILE */
 
 @media (max-width: 700px) {
-
   .client-marquee {
     padding: 65px 0;
   }
@@ -3629,7 +3497,6 @@ footer a:hover {
   .logo-track-rtl {
     animation-duration: 24s;
   }
-
 }
 /* OUR NETWORK HEADING */
 
@@ -3655,13 +3522,12 @@ footer {
   background: #07132d;
   color: #ffffff;
   margin-top: 0;
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 footer .w {
   max-width: 1200px;
 }
-
 
 /* ================= FOOTER MAIN ================= */
 
@@ -3672,7 +3538,6 @@ footer .w {
   padding: 75px 0 60px;
 }
 
-
 /* ================= COMPANY ================= */
 
 .footer-company {
@@ -3682,7 +3547,7 @@ footer .w {
 .footer-company .logo {
   font-size: 24px;
   font-weight: 800;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .footer-company .logo b {
@@ -3715,7 +3580,7 @@ footer .w {
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
-  transition: color .25s ease;
+  transition: color 0.25s ease;
 }
 
 .footer-contact a:hover {
@@ -3728,7 +3593,6 @@ footer .w {
   font-size: 13px;
   line-height: 1.8;
 }
-
 
 /* ================= FOOTER COLUMNS ================= */
 
@@ -3754,15 +3618,14 @@ footer .w {
   line-height: 1.5;
   text-decoration: none;
   transition:
-    color .25s ease,
-    transform .25s ease;
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer-column a:hover {
   color: #ffffff;
   transform: translateX(3px);
 }
-
 
 /* ================= LET'S CONNECT ================= */
 
@@ -3783,7 +3646,7 @@ footer .w {
   color: #07132d !important;
   border-radius: 5px;
   font-weight: 700;
-  transition: all .25s ease !important;
+  transition: all 0.25s ease !important;
 }
 
 .footer-contact-btn:hover {
@@ -3797,18 +3660,17 @@ footer .w {
   align-items: center;
   justify-content: center;
   padding: 10px 18px;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 5px;
   color: #ffffff !important;
   font-weight: 600;
 }
 
 .footer-whatsapp:hover {
-  background: #25D366;
-  border-color: #25D366;
+  background: #25d366;
+  border-color: #25d366;
   transform: translateY(-2px) !important;
 }
-
 
 /* ================= SOCIAL MEDIA ================= */
 
@@ -3845,66 +3707,56 @@ footer .w {
   font-weight: 800;
   text-decoration: none !important;
   transition:
-    transform .25s ease,
-    box-shadow .25s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
-
 
 /* LINKEDIN */
 
 .social-icons a:nth-child(1) {
-  background: #0A66C2;
+  background: #0a66c2;
 }
 
 .social-icons a:nth-child(1):hover {
-  background: #0A66C2;
+  background: #0a66c2;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(10,102,194,.35);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.35);
 }
-
 
 /* INSTAGRAM */
 
 .social-icons a:nth-child(2) {
-  background: linear-gradient(
-    135deg,
-    #833AB4 0%,
-    #E1306C 50%,
-    #FCAF45 100%
-  );
+  background: linear-gradient(135deg, #833ab4 0%, #e1306c 50%, #fcaf45 100%);
 }
 
 .social-icons a:nth-child(2):hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(225,48,108,.35);
+  box-shadow: 0 8px 20px rgba(225, 48, 108, 0.35);
 }
-
 
 /* FACEBOOK */
 
 .social-icons a:nth-child(3) {
-  background: #1877F2;
+  background: #1877f2;
 }
 
 .social-icons a:nth-child(3):hover {
-  background: #1877F2;
+  background: #1877f2;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(24,119,242,.35);
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.35);
 }
-
 
 /* YOUTUBE */
 
 .social-icons a:nth-child(4) {
-  background: #FF0000;
+  background: #ff0000;
 }
 
 .social-icons a:nth-child(4):hover {
-  background: #FF0000;
+  background: #ff0000;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(255,0,0,.35);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.35);
 }
-
 
 /* ================= FOOTER BOTTOM ================= */
 
@@ -3914,7 +3766,7 @@ footer .w {
   align-items: center;
   gap: 20px;
   padding: 22px 0;
-  border-top: 1px solid rgba(255,255,255,.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #8291ad;
   font-size: 12px;
 }
@@ -3928,13 +3780,12 @@ footer .w {
 .footer-legal a {
   color: #8291ad;
   text-decoration: none;
-  transition: color .25s ease;
+  transition: color 0.25s ease;
 }
 
 .footer-legal a:hover {
   color: #ffffff;
 }
-
 
 /* ================= MYLOTIC CREDIT ================= */
 
@@ -3943,7 +3794,7 @@ footer .w {
   text-align: center;
   color: #64728c;
   font-size: 10px;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
 }
 
 .mylotic-credit a {
@@ -3956,11 +3807,9 @@ footer .w {
   color: #ffffff;
 }
 
-
 /* ================= MOBILE ================= */
 
 @media (max-width: 1000px) {
-
   .footer-main {
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 40px 30px;
@@ -3970,12 +3819,9 @@ footer .w {
     grid-column: 1 / -1;
     max-width: 600px;
   }
-
 }
 
-
 @media (max-width: 650px) {
-
   .footer-main {
     grid-template-columns: 1fr 1fr;
     gap: 35px 25px;
@@ -3995,12 +3841,9 @@ footer .w {
     align-items: flex-start;
     gap: 12px;
   }
-
 }
 
-
 @media (max-width: 430px) {
-
   .footer-main {
     grid-template-columns: 1fr;
   }
@@ -4016,7 +3859,6 @@ footer .w {
   .footer-cta {
     grid-column: 1;
   }
-
 }
 /* =========================================================
    ACE TALENT CONSULTING - CLEAN PREMIUM FOOTER
@@ -4097,7 +3939,6 @@ footer {
   line-height: 1.65;
 }
 
-
 /* Footer headings */
 .footer-column h4,
 .footer-cta h4 {
@@ -4109,7 +3950,6 @@ footer {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
-
 
 /* Footer links */
 .footer-column {
@@ -4124,14 +3964,15 @@ footer {
   font-size: 13px;
   line-height: 1.45;
   text-decoration: none;
-  transition: color .2s ease, transform .2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .footer-column a:hover {
   color: #fff;
   transform: translateX(3px);
 }
-
 
 /* Connect column */
 .footer-cta {
@@ -4171,15 +4012,14 @@ footer {
 }
 
 .footer-whatsapp {
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: #fff !important;
 }
 
 .footer-whatsapp:hover {
-  background: #25D366;
-  border-color: #25D366;
+  background: #25d366;
+  border-color: #25d366;
 }
-
 
 /* =========================================================
    SOCIAL ICONS
@@ -4217,54 +4057,50 @@ footer {
   text-decoration: none !important;
   font-size: 14px !important;
   font-weight: 800 !important;
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* LinkedIn */
 .social-icons a:nth-child(1) {
-  background: #0A66C2;
+  background: #0a66c2;
 }
 
 .social-icons a:nth-child(1):hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(10,102,194,.35);
+  box-shadow: 0 6px 15px rgba(10, 102, 194, 0.35);
 }
 
 /* Instagram */
 .social-icons a:nth-child(2) {
-  background: linear-gradient(
-    135deg,
-    #833AB4,
-    #E1306C,
-    #FCAF45
-  );
+  background: linear-gradient(135deg, #833ab4, #e1306c, #fcaf45);
 }
 
 .social-icons a:nth-child(2):hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(225,48,108,.35);
+  box-shadow: 0 6px 15px rgba(225, 48, 108, 0.35);
 }
 
 /* Facebook */
 .social-icons a:nth-child(3) {
-  background: #1877F2;
+  background: #1877f2;
 }
 
 .social-icons a:nth-child(3):hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(24,119,242,.35);
+  box-shadow: 0 6px 15px rgba(24, 119, 242, 0.35);
 }
 
 /* YouTube */
 .social-icons a:nth-child(4) {
-  background: #FF0000;
+  background: #ff0000;
 }
 
 .social-icons a:nth-child(4):hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(255,0,0,.35);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.35);
 }
-
 
 /* =========================================================
    BOTTOM BAR
@@ -4277,7 +4113,7 @@ footer {
   justify-content: space-between;
   gap: 20px;
   padding: 17px 0;
-  border-top: 1px solid rgba(255,255,255,.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
   color: #8291ad;
   font-size: 11px;
@@ -4298,14 +4134,13 @@ footer {
   color: #fff;
 }
 
-
 /* Mylotic credit */
 .mylotic-credit {
   padding: 10px 0 18px;
   text-align: center;
   color: #596985;
   font-size: 9px;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
 }
 
 .mylotic-credit a {
@@ -4318,13 +4153,11 @@ footer {
   color: #fff;
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 1050px) {
-
   .footer-main {
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 35px;
@@ -4334,16 +4167,13 @@ footer {
     grid-column: 1 / -1;
     max-width: 600px;
   }
-
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
-
   .footer-main {
     grid-template-columns: 1fr 1fr;
     gap: 32px 25px;
@@ -4364,12 +4194,9 @@ footer {
     align-items: flex-start;
     gap: 10px;
   }
-
 }
 
-
 @media (max-width: 430px) {
-
   .footer-main {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -4383,7 +4210,6 @@ footer {
   .footer-bottom {
     font-size: 10px;
   }
-
 }
 /* =========================================================
    OUR FOUNDERS - PREMIUM EDITORIAL DESIGN
@@ -4395,14 +4221,13 @@ footer {
   overflow: hidden;
 }
 
-
 /* =========================================================
    INTRO
    ========================================================= */
 
 .founders-intro {
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: 1.05fr 0.95fr;
   gap: 90px;
   align-items: end;
   margin-bottom: 58px;
@@ -4434,7 +4259,6 @@ footer {
   line-height: 1.85;
 }
 
-
 /* =========================================================
    FOUNDER FEATURE
    ========================================================= */
@@ -4453,17 +4277,15 @@ footer {
 .founder-feature-light {
   background: #fff;
   color: var(--navy);
-  border: 1px solid rgba(10,26,63,.10);
+  border: 1px solid rgba(10, 26, 63, 0.1);
 }
-
 
 .founder-feature-grid {
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: 1.05fr 0.95fr;
   gap: 70px;
   padding: 58px 62px 58px;
 }
-
 
 /* =========================================================
    NUMBER
@@ -4479,13 +4301,12 @@ footer {
   font-weight: 800;
   letter-spacing: -4px;
 
-  opacity: .08;
+  opacity: 0.08;
 }
 
 .founder-feature-light .founder-number {
   color: var(--navy);
 }
-
 
 /* =========================================================
    PROFILE
@@ -4523,7 +4344,6 @@ footer {
   color: var(--mut);
 }
 
-
 /* =========================================================
    EXPERIENCE HIGHLIGHT
    ========================================================= */
@@ -4536,12 +4356,12 @@ footer {
   margin-top: 32px;
   padding: 20px 0;
 
-  border-top: 1px solid rgba(255,255,255,.12);
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .founder-feature-light .founder-highlight {
-  border-color: rgba(10,26,63,.10);
+  border-color: rgba(10, 26, 63, 0.1);
 }
 
 .founder-highlight-number {
@@ -4575,7 +4395,6 @@ footer {
   font-size: 11px;
   line-height: 1.5;
 }
-
 
 /* =========================================================
    FOUNDER STATEMENT
@@ -4612,7 +4431,6 @@ footer {
 .founder-feature-light .founder-statement p {
   color: var(--mut);
 }
-
 
 /* =========================================================
    CAREER JOURNEY
@@ -4652,11 +4470,11 @@ footer {
 
   width: 1px;
 
-  background: rgba(120,160,255,.35);
+  background: rgba(120, 160, 255, 0.35);
 }
 
 .founder-feature-light .career-line::before {
-  background: rgba(31,91,255,.18);
+  background: rgba(31, 91, 255, 0.18);
 }
 
 .career-item {
@@ -4685,7 +4503,7 @@ footer {
 
   background: #1f5bff;
 
-  box-shadow: 0 0 0 4px rgba(31,91,255,.12);
+  box-shadow: 0 0 0 4px rgba(31, 91, 255, 0.12);
 }
 
 .career-item strong {
@@ -4710,7 +4528,6 @@ footer {
   line-height: 1.5;
 }
 
-
 /* =========================================================
    QUALIFICATION
    ========================================================= */
@@ -4724,7 +4541,7 @@ footer {
   padding: 16px 18px;
 
   background: #f6f8fc;
-  border: 1px solid rgba(10,26,63,.08);
+  border: 1px solid rgba(10, 26, 63, 0.08);
 }
 
 .founder-qualification span {
@@ -4743,7 +4560,6 @@ footer {
   color: var(--mut);
   font-size: 10px;
 }
-
 
 /* =========================================================
    CLOSING
@@ -4779,13 +4595,11 @@ footer {
   color: var(--navy);
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
-
   .founders-intro {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -4796,16 +4610,13 @@ footer {
     gap: 45px;
     padding: 45px 38px;
   }
-
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
-
   .founders-section {
     padding: 75px 0 70px;
   }
@@ -4845,7 +4656,6 @@ footer {
   .founders-closing {
     align-items: flex-start;
   }
-
 }
 /* =========================
    FINAL FOOTER
@@ -4869,7 +4679,6 @@ footer {
   display: block !important;
 }
 
-
 /* MAIN FOOTER */
 
 #site-footer .footer-main {
@@ -4878,7 +4687,6 @@ footer {
   gap: 38px;
   padding: 48px 0 35px;
 }
-
 
 /* COMPANY */
 
@@ -4931,7 +4739,6 @@ footer {
   line-height: 1.6;
 }
 
-
 /* COLUMNS */
 
 #site-footer .footer-column h4 {
@@ -4956,7 +4763,6 @@ footer {
 #site-footer .footer-column a:hover {
   color: #fff !important;
 }
-
 
 /* SOCIAL */
 
@@ -4995,21 +4801,20 @@ footer {
 }
 
 #site-footer .social-icons a:nth-child(1) {
-  background: #0A66C2;
+  background: #0a66c2;
 }
 
 #site-footer .social-icons a:nth-child(2) {
-  background: linear-gradient(135deg,#833AB4,#E1306C,#FCAF45);
+  background: linear-gradient(135deg, #833ab4, #e1306c, #fcaf45);
 }
 
 #site-footer .social-icons a:nth-child(3) {
-  background: #1877F2;
+  background: #1877f2;
 }
 
 #site-footer .social-icons a:nth-child(4) {
-  background: #FF0000;
+  background: #ff0000;
 }
-
 
 /* BOTTOM */
 
@@ -5018,7 +4823,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 14px 0;
-  border-top: 1px solid rgba(255,255,255,.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #71809a;
   font-size: 10px;
 }
@@ -5037,7 +4842,6 @@ footer {
   text-decoration: none;
 }
 
-
 /* MYLOTIC */
 
 #site-footer .mylotic-credit {
@@ -5055,7 +4859,6 @@ footer {
   font-weight: 700;
   text-decoration: none;
 }
-
 
 /* MOBILE */
 
@@ -5091,11 +4894,9 @@ footer {
    MOBILE + TABLET FINAL POLISH
    ========================================================= */
 
-
 /* ---------- TABLET ---------- */
 
 @media (max-width: 980px) {
-
   .w {
     width: min(100% - 36px, 1180px);
   }
@@ -5115,7 +4916,6 @@ footer {
     line-height: 1.7;
   }
 
-
   /* HEADER */
 
   .hb {
@@ -5129,7 +4929,6 @@ footer {
   nav {
     z-index: 100;
   }
-
 
   /* HERO */
 
@@ -5145,7 +4944,6 @@ footer {
     max-width: 650px;
   }
 
-
   /* GENERAL GRIDS */
 
   .grid.g3 {
@@ -5156,13 +4954,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
-
   /* HIRE / CAREER IMAGES */
 
   .grid.g2 .card img {
     height: 390px !important;
   }
-
 
   /* SERVICES */
 
@@ -5172,14 +4968,12 @@ footer {
     align-items: start !important;
   }
 
-
   /* HOW WE WORK */
 
   .how-we-work,
   .process-grid {
     overflow-x: auto;
   }
-
 
   /* WHY ACE */
 
@@ -5196,13 +4990,11 @@ footer {
     max-width: 700px;
   }
 
-
   /* INDUSTRIES */
 
   .industry-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
 
   /* CLIENT LOGOS */
 
@@ -5219,7 +5011,6 @@ footer {
     height: 95px;
   }
 
-
   /* FOUNDERS */
 
   .founders-intro {
@@ -5231,18 +5022,14 @@ footer {
     grid-template-columns: 1fr;
     gap: 45px;
   }
-
 }
-
 
 /* ---------- MOBILE ---------- */
 
 @media (max-width: 700px) {
-
   .w {
     width: min(100% - 28px, 1180px);
   }
-
 
   /* TYPOGRAPHY */
 
@@ -5266,7 +5053,6 @@ footer {
     font-size: 14px;
     line-height: 1.7;
   }
-
 
   /* HEADER */
 
@@ -5297,7 +5083,6 @@ footer {
     height: 42px;
   }
 
-
   /* MOBILE NAV */
 
   nav {
@@ -5312,7 +5097,6 @@ footer {
     padding: 13px 8px;
     font-size: 15px;
   }
-
 
   /* HERO */
 
@@ -5339,7 +5123,6 @@ footer {
     line-height: 1.6;
   }
 
-
   /* SEARCH / PREMIUM BAR */
 
   .sb {
@@ -5354,7 +5137,6 @@ footer {
     width: 100%;
   }
 
-
   /* GENERAL SECTIONS */
 
   .sec {
@@ -5365,7 +5147,6 @@ footer {
     margin-bottom: 30px;
   }
 
-
   /* GRIDS */
 
   .grid,
@@ -5373,7 +5154,6 @@ footer {
   .grid.g3 {
     grid-template-columns: 1fr !important;
   }
-
 
   /* BUTTONS */
 
@@ -5388,7 +5168,6 @@ footer {
     font-size: 13px;
   }
 
-
   /* HIRE / CAREER CARDS */
 
   .grid.g2 .card img {
@@ -5399,13 +5178,11 @@ footer {
     padding: 22px !important;
   }
 
-
   /* ABOUT IMAGE */
 
   img[alt*="ACE Talent Consulting recruitment team"] {
     height: 300px !important;
   }
-
 
   /* SERVICES */
 
@@ -5422,12 +5199,11 @@ footer {
     overflow: hidden;
   }
 
-
   /* SERVICE ROW */
 
   .services-list a,
   #recruitment-staffing-services a[href*="/services/"] {
-    grid-template-columns: 38px minmax(0,1fr) !important;
+    grid-template-columns: 38px minmax(0, 1fr) !important;
     gap: 15px !important;
     padding: 22px 0 !important;
   }
@@ -5437,13 +5213,11 @@ footer {
     display: none;
   }
 
-
   /* HOW WE WORK TIMELINE */
 
   .steps {
     grid-template-columns: 1fr !important;
   }
-
 
   /* HOME PROCESS 6 COLUMN */
 
@@ -5459,7 +5233,6 @@ footer {
   .w > div[style*="repeat(6,1fr)"] + div {
     grid-template-columns: 1fr !important;
   }
-
 
   /* INDUSTRIES */
 
@@ -5480,7 +5253,6 @@ footer {
     height: 80px;
     font-size: 17px;
   }
-
 
   /* WHY ACE */
 
@@ -5524,7 +5296,6 @@ footer {
     padding: 18px 10px;
   }
 
-
   /* CLIENT LOGOS */
 
   .client-marquee {
@@ -5560,7 +5331,6 @@ footer {
     max-width: 110px !important;
     max-height: 50px !important;
   }
-
 
   /* FOUNDERS */
 
@@ -5602,7 +5372,6 @@ footer {
     flex-wrap: wrap;
   }
 
-
   /* FAQ */
 
   details {
@@ -5612,7 +5381,6 @@ footer {
   summary {
     font-size: 14px;
   }
-
 
   /* CTA */
 
@@ -5625,7 +5393,6 @@ footer {
     font-size: 30px;
   }
 
-
   /* INNER PAGE HERO */
 
   .ph2 {
@@ -5635,7 +5402,6 @@ footer {
   .ph2 h1 {
     font-size: 38px;
   }
-
 
   /* JOB FILTERS */
 
@@ -5651,7 +5417,6 @@ footer {
   .fp select {
     width: 100%;
   }
-
 
   /* FOOTER */
 
@@ -5673,14 +5438,11 @@ footer {
     align-items: flex-start;
     gap: 8px;
   }
-
 }
-
 
 /* ---------- SMALL MOBILE ---------- */
 
 @media (max-width: 430px) {
-
   .w {
     width: min(100% - 22px, 1180px);
   }
@@ -5716,7 +5478,6 @@ footer {
   #site-footer .footer-company {
     grid-column: auto;
   }
-
 }
 .job-detail-section {
   padding-top: 55px;
@@ -5743,7 +5504,7 @@ footer {
 }
 
 .job-client-label {
-  color: rgba(255,255,255,.65);
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 7px;
 }
 
@@ -5758,7 +5519,7 @@ footer {
   border-radius: 14px;
   padding: 30px;
   margin-bottom: 20px;
-  box-shadow: 0 8px 30px rgba(10,26,63,.05);
+  box-shadow: 0 8px 30px rgba(10, 26, 63, 0.05);
 }
 
 .job-detail-label {
@@ -5782,7 +5543,7 @@ footer {
   font-size: 12px;
   color: var(--mut);
   text-transform: uppercase;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
 }
 
 .job-info-item strong {
@@ -5847,11 +5608,10 @@ footer {
 
 .job-apply-panel p {
   margin: 0;
-  color: rgba(255,255,255,.72);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 @media (max-width: 760px) {
-
   .job-info-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -5866,15 +5626,12 @@ footer {
   .job-apply-panel {
     padding: 24px;
   }
-
 }
 
 @media (max-width: 520px) {
-
   .job-info-grid {
     grid-template-columns: 1fr;
   }
-
 }
 /* =========================================================
    ACE TALENT CONSULTING - FINAL HEADER + LOGO
@@ -5885,16 +5642,15 @@ footer {
   top: 0 !important;
   z-index: 9999 !important;
   background: #ffffff !important;
-  border-bottom: 1px solid rgba(10, 26, 63, .08) !important;
+  border-bottom: 1px solid rgba(10, 26, 63, 0.08) !important;
 }
 
 #hd .top-line {
   width: 100% !important;
   height: 1px !important;
   background: #1f5bff !important;
-  opacity: .30 !important;
+  opacity: 0.3 !important;
 }
-
 
 /* HEADER ROW */
 
@@ -5907,7 +5663,6 @@ footer {
 
   gap: 28px !important;
 }
-
 
 /* =========================================================
    LOGO
@@ -5940,7 +5695,6 @@ footer {
   object-position: center !important;
 }
 
-
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -5970,7 +5724,6 @@ footer {
   position: relative !important;
 }
 
-
 /* NAV LINKS */
 
 #hd #nv a.t {
@@ -5993,10 +5746,9 @@ footer {
   text-decoration: none !important;
 
   transition:
-    color .2s ease,
-    background .2s ease !important;
+    color 0.2s ease,
+    background 0.2s ease !important;
 }
-
 
 /* HOVER */
 
@@ -6004,7 +5756,6 @@ footer {
   color: #1f5bff !important;
   background: #f3f6ff !important;
 }
-
 
 /* ACTIVE / HOVER LINE */
 
@@ -6025,13 +5776,12 @@ footer {
 
   transform: scaleX(0) !important;
 
-  transition: transform .2s ease !important;
+  transition: transform 0.2s ease !important;
 }
 
 #hd #nv a.t:hover::after {
   transform: scaleX(1) !important;
 }
-
 
 /* =========================================================
    DROPDOWN
@@ -6050,8 +5800,7 @@ footer {
 
   border-radius: 14px !important;
 
-  box-shadow:
-    0 18px 45px rgba(10,26,63,.14) !important;
+  box-shadow: 0 18px 45px rgba(10, 26, 63, 0.14) !important;
 }
 
 #hd .menu a {
@@ -6069,7 +5818,6 @@ footer {
   color: #1f5bff !important;
 }
 
-
 /* =========================================================
    RIGHT SIDE
    ========================================================= */
@@ -6083,7 +5831,6 @@ footer {
   flex-shrink: 0 !important;
 }
 
-
 /* HIRE TALENT */
 
 #hd .ha .b1 {
@@ -6096,21 +5843,18 @@ footer {
   font-size: 14px !important;
   font-weight: 700 !important;
 
-  box-shadow:
-    0 8px 22px rgba(255,176,32,.22) !important;
+  box-shadow: 0 8px 22px rgba(255, 176, 32, 0.22) !important;
 
   transition:
-    transform .2s ease,
-    box-shadow .2s ease !important;
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
 }
 
 #hd .ha .b1:hover {
   transform: translateY(-2px) !important;
 
-  box-shadow:
-    0 12px 28px rgba(255,176,32,.30) !important;
+  box-shadow: 0 12px 28px rgba(255, 176, 32, 0.3) !important;
 }
-
 
 /* CONTACT */
 
@@ -6129,15 +5873,14 @@ footer {
   font-weight: 600 !important;
 
   transition:
-    background .2s ease,
-    color .2s ease !important;
+    background 0.2s ease,
+    color 0.2s ease !important;
 }
 
 #hd .ha .b4:hover {
   background: #f3f6ff !important;
   color: #1f5bff !important;
 }
-
 
 /* =========================================================
    MOBILE BUTTON
@@ -6155,13 +5898,11 @@ footer {
   color: #0a1a3f !important;
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 1100px) {
-
   #hd .hb {
     gap: 16px !important;
   }
@@ -6191,13 +5932,11 @@ footer {
   }
 }
 
-
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 980px) {
-
   #hd .hb {
     height: 76px !important;
     min-height: 76px !important;
@@ -6223,9 +5962,7 @@ footer {
   }
 }
 
-
 @media (max-width: 520px) {
-
   #hd .hb {
     height: 70px !important;
     min-height: 70px !important;
@@ -6259,14 +5996,10 @@ footer {
   background:
     radial-gradient(
       circle at 90% 15%,
-      rgba(31,91,255,.12),
+      rgba(31, 91, 255, 0.12),
       transparent 31%
     ),
-    linear-gradient(
-      180deg,
-      #f7faff 0%,
-      #ffffff 100%
-    );
+    linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
 }
 
 .ace-about-hero-layout {
@@ -6284,7 +6017,7 @@ footer {
   color: #1f5bff;
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: .17em;
+  letter-spacing: 0.17em;
 }
 
 .ace-about-eyebrow::before {
@@ -6307,9 +6040,9 @@ footer {
   max-width: 680px;
   margin: 0;
   color: #081632;
-  font-size: clamp(44px,5vw,72px);
+  font-size: clamp(44px, 5vw, 72px);
   line-height: 1.02;
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
 }
 
 .ace-about-hero-content h1 span {
@@ -6342,7 +6075,7 @@ footer {
   overflow: hidden;
   border-radius: 30px;
   background: #e9eef7;
-  box-shadow: 0 30px 80px rgba(8,22,50,.17);
+  box-shadow: 0 30px 80px rgba(8, 22, 50, 0.17);
 }
 
 .ace-about-image-wrap img {
@@ -6356,12 +6089,11 @@ footer {
 .ace-about-image-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      180deg,
-      transparent 45%,
-      rgba(5,17,42,.72) 100%
-    );
+  background: linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(5, 17, 42, 0.72) 100%
+  );
 }
 
 .ace-about-image-caption {
@@ -6376,10 +6108,10 @@ footer {
 .ace-about-image-caption span {
   display: block;
   margin-bottom: 9px;
-  opacity: .75;
+  opacity: 0.75;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .16em;
+  letter-spacing: 0.16em;
 }
 
 .ace-about-image-caption strong {
@@ -6395,10 +6127,10 @@ footer {
   bottom: 46px;
   width: 220px;
   padding: 20px;
-  border: 1px solid rgba(255,255,255,.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 17px;
-  background: rgba(255,255,255,.94);
-  box-shadow: 0 20px 45px rgba(8,22,50,.14);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 20px 45px rgba(8, 22, 50, 0.14);
   backdrop-filter: blur(12px);
 }
 
@@ -6408,7 +6140,7 @@ footer {
   color: #7c899e;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -6427,7 +6159,7 @@ footer {
 
 .ace-about-story-grid {
   display: grid;
-  grid-template-columns: .9fr 1.1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 95px;
   align-items: start;
 }
@@ -6436,9 +6168,9 @@ footer {
   max-width: 590px;
   margin: 12px 0 0;
   color: #081632;
-  font-size: clamp(35px,4vw,55px);
+  font-size: clamp(35px, 4vw, 55px);
   line-height: 1.07;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .ace-about-heading-line {
@@ -6465,7 +6197,7 @@ footer {
 
 .ace-about-position-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
@@ -6478,15 +6210,15 @@ footer {
   border-radius: 21px;
   background: #fff;
   transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    border-color .25s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .ace-about-position-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(31,91,255,.35);
-  box-shadow: 0 20px 45px rgba(8,22,50,.09);
+  border-color: rgba(31, 91, 255, 0.35);
+  box-shadow: 0 20px 45px rgba(8, 22, 50, 0.09);
 }
 
 .ace-about-position-number {
@@ -6537,7 +6269,7 @@ footer {
 
 .ace-about-expertise-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
@@ -6551,15 +6283,15 @@ footer {
   border-radius: 18px;
   background: #fff;
   transition:
-    transform .23s ease,
-    box-shadow .23s ease,
-    border-color .23s ease;
+    transform 0.23s ease,
+    box-shadow 0.23s ease,
+    border-color 0.23s ease;
 }
 
 .ace-about-expertise-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(31,91,255,.35);
-  box-shadow: 0 17px 38px rgba(8,22,50,.08);
+  border-color: rgba(31, 91, 255, 0.35);
+  box-shadow: 0 17px 38px rgba(8, 22, 50, 0.08);
 }
 
 .ace-about-expertise-card > span {
@@ -6599,9 +6331,9 @@ footer {
   max-width: 650px;
   margin: 12px 0 0;
   color: #081632;
-  font-size: clamp(35px,4vw,54px);
+  font-size: clamp(35px, 4vw, 54px);
   line-height: 1.07;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .ace-about-process-intro > p {
@@ -6612,7 +6344,7 @@ footer {
 
 .ace-about-process-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid #dce4f0;
   border-left: 1px solid #dce4f0;
 }
@@ -6638,7 +6370,7 @@ footer {
   color: #1f5bff;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 
 .ace-about-process-card h3 {
@@ -6657,7 +6389,7 @@ footer {
 
 .ace-about-industry-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
 
@@ -6673,15 +6405,15 @@ footer {
   color: inherit;
   text-decoration: none;
   transition:
-    transform .22s ease,
-    box-shadow .22s ease,
-    border-color .22s ease;
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
 }
 
 .ace-about-industry-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(31,91,255,.35);
-  box-shadow: 0 14px 32px rgba(8,22,50,.07);
+  border-color: rgba(31, 91, 255, 0.35);
+  box-shadow: 0 14px 32px rgba(8, 22, 50, 0.07);
 }
 
 .ace-about-industry-card span {
@@ -6711,7 +6443,7 @@ footer {
 
 .ace-about-why-grid {
   display: grid;
-  grid-template-columns: .9fr 1.1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 90px;
 }
 
@@ -6719,9 +6451,9 @@ footer {
   max-width: 630px;
   margin: 12px 0 20px;
   color: #fff;
-  font-size: clamp(37px,4.5vw,58px);
+  font-size: clamp(37px, 4.5vw, 58px);
   line-height: 1.05;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .ace-about-why-heading p {
@@ -6732,7 +6464,7 @@ footer {
 }
 
 .ace-about-why-list {
-  border-top: 1px solid rgba(255,255,255,.13);
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .ace-about-why-item {
@@ -6740,7 +6472,7 @@ footer {
   grid-template-columns: 42px 1fr;
   gap: 20px;
   padding: 23px 0;
-  border-bottom: 1px solid rgba(255,255,255,.13);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .ace-about-why-item > span {
@@ -6764,7 +6496,7 @@ footer {
 
 .ace-about-leadership-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -6790,7 +6522,7 @@ footer {
   position: absolute;
   top: 16px;
   right: 25px;
-  color: rgba(255,255,255,.08);
+  color: rgba(255, 255, 255, 0.08);
   font-size: 88px;
   line-height: 1;
   font-weight: 800;
@@ -6807,7 +6539,7 @@ footer {
   color: #83a1ee;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .16em;
+  letter-spacing: 0.16em;
 }
 
 .ace-about-leader-card.light .ace-leader-role {
@@ -6819,7 +6551,7 @@ footer {
   z-index: 1;
   margin: 0 0 8px;
   font-size: 31px;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
 
 .ace-leader-focus {
@@ -6843,8 +6575,8 @@ footer {
   align-items: baseline;
   margin-bottom: 22px;
   padding: 16px 0;
-  border-top: 1px solid rgba(255,255,255,.13);
-  border-bottom: 1px solid rgba(255,255,255,.13);
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .ace-about-leader-card.light .ace-leader-experience {
@@ -6889,7 +6621,7 @@ footer {
 
 .ace-leader-tags span {
   padding: 7px 10px;
-  border: 1px solid rgba(255,255,255,.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 999px;
   color: #c1cbe0;
   font-size: 10px;
@@ -6916,7 +6648,7 @@ footer {
   color: #c5cfdd;
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
@@ -6925,9 +6657,9 @@ footer {
   max-width: 680px;
   margin: 11px 0 14px;
   color: #081632;
-  font-size: clamp(34px,4vw,50px);
+  font-size: clamp(34px, 4vw, 50px);
   line-height: 1.08;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .ace-about-candidate-content p {
@@ -6984,7 +6716,7 @@ footer {
   background:
     radial-gradient(
       circle at 95% 20%,
-      rgba(31,91,255,.15),
+      rgba(31, 91, 255, 0.15),
       transparent 30%
     ),
     #f5f8fd;
@@ -6995,9 +6727,9 @@ footer {
   max-width: 760px;
   margin: 11px 0 14px;
   color: #081632;
-  font-size: clamp(33px,4vw,52px);
+  font-size: clamp(33px, 4vw, 52px);
   line-height: 1.08;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .ace-about-final-copy p {
@@ -7029,9 +6761,9 @@ footer {
 .ace-about-faq-heading h2 {
   margin: 12px 0 10px;
   color: #081632;
-  font-size: clamp(35px,4vw,50px);
+  font-size: clamp(35px, 4vw, 50px);
   line-height: 1.08;
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
 }
 
 .ace-about-faq-heading p {
@@ -7078,7 +6810,6 @@ footer {
 }
 
 @media (max-width: 1100px) {
-
   .ace-about-hero-layout,
   .ace-about-story-grid,
   .ace-about-why-grid {
@@ -7094,7 +6825,7 @@ footer {
   }
 
   .ace-about-industry-grid {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .ace-about-candidate-block {
@@ -7123,7 +6854,6 @@ footer {
 }
 
 @media (max-width: 760px) {
-
   .ace-about-premium-hero {
     padding: 56px 0 62px;
   }
@@ -7177,7 +6907,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-
   .ace-about-industry-grid {
     grid-template-columns: 1fr;
   }
@@ -7315,14 +7044,13 @@ footer {
 .ace-about-image-hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5,18,45,.92) 0%,
-      rgba(5,18,45,.72) 42%,
-      rgba(5,18,45,.20) 78%,
-      rgba(5,18,45,.08) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(5, 18, 45, 0.92) 0%,
+    rgba(5, 18, 45, 0.72) 42%,
+    rgba(5, 18, 45, 0.2) 78%,
+    rgba(5, 18, 45, 0.08) 100%
+  );
 }
 
 .ace-about-image-hero-content {
@@ -7338,7 +7066,7 @@ footer {
   color: #fff;
   font-size: clamp(42px, 5vw, 70px);
   line-height: 1.04;
-  letter-spacing: -.045em;
+  letter-spacing: -0.045em;
 }
 
 .ace-about-image-hero-content p {
@@ -7386,8 +7114,7 @@ footer {
   min-height: 650px;
   display: flex;
   align-items: center;
-  background:
-    linear-gradient(120deg, #071632 0%, #0b1e48 55%, #102d68 100%);
+  background: linear-gradient(120deg, #071632 0%, #0b1e48 55%, #102d68 100%);
 }
 
 .services-hero-overlay {
@@ -7396,14 +7123,10 @@ footer {
   background:
     radial-gradient(
       circle at 85% 25%,
-      rgba(31,91,255,.28),
+      rgba(31, 91, 255, 0.28),
       transparent 28%
     ),
-    radial-gradient(
-      circle at 65% 85%,
-      rgba(92,143,255,.10),
-      transparent 25%
-    );
+    radial-gradient(circle at 65% 85%, rgba(92, 143, 255, 0.1), transparent 25%);
   pointer-events: none;
 }
 
@@ -7411,7 +7134,7 @@ footer {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.12fr .88fr;
+  grid-template-columns: 1.12fr 0.88fr;
   gap: 80px;
   align-items: center;
   padding-top: 92px;
@@ -7431,7 +7154,7 @@ footer {
   color: #fff;
   font-size: clamp(44px, 5vw, 72px);
   line-height: 1.03;
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
 }
 
 .services-hero-copy h1 span {
@@ -7456,10 +7179,10 @@ footer {
   max-width: 410px;
   justify-self: end;
   padding: 32px;
-  border: 1px solid rgba(255,255,255,.13);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 23px;
-  background: rgba(255,255,255,.075);
-  box-shadow: 0 28px 70px rgba(0,0,0,.22);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(14px);
 }
 
@@ -7468,7 +7191,7 @@ footer {
   color: #87a7ff;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .17em;
+  letter-spacing: 0.17em;
 }
 
 .services-hero-card h3 {
@@ -7480,7 +7203,7 @@ footer {
 
 .services-hero-points {
   margin-top: 26px;
-  border-top: 1px solid rgba(255,255,255,.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .services-hero-points div {
@@ -7488,7 +7211,7 @@ footer {
   align-items: center;
   gap: 15px;
   padding: 13px 0;
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .services-hero-points b {
@@ -7501,14 +7224,13 @@ footer {
   font-size: 13px;
 }
 
-
 /* =========================================================
    INTRO
    ========================================================= */
 
 .services-intro-grid {
   display: grid;
-  grid-template-columns: .92fr 1.08fr;
+  grid-template-columns: 0.92fr 1.08fr;
   gap: 90px;
   align-items: start;
 }
@@ -7519,7 +7241,7 @@ footer {
   color: #081632;
   font-size: clamp(36px, 4vw, 54px);
   line-height: 1.07;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .services-intro-copy p {
@@ -7535,7 +7257,6 @@ footer {
   font-size: 21px;
   line-height: 1.68;
 }
-
 
 /* =========================================================
    SERVICE LIST
@@ -7555,20 +7276,20 @@ footer {
   color: inherit;
   text-decoration: none;
   transition:
-    background .22s ease,
-    padding-left .22s ease;
+    background 0.22s ease,
+    padding-left 0.22s ease;
 }
 
 .services-list-item:hover {
   padding-left: 22px;
-  background: rgba(31,91,255,.025);
+  background: rgba(31, 91, 255, 0.025);
 }
 
 .services-list-number {
   color: #1f5bff;
   font-size: 13px;
   font-weight: 800;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
 
 .services-list-tag {
@@ -7576,7 +7297,7 @@ footer {
   color: #8793a6;
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 
 .services-list-main h3 {
@@ -7584,7 +7305,7 @@ footer {
   color: #081632;
   font-size: 25px;
   line-height: 1.2;
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
 }
 
 .services-list-main p {
@@ -7605,15 +7326,14 @@ footer {
   color: #1f5bff;
   font-size: 18px;
   transition:
-    transform .22s ease,
-    background .22s ease;
+    transform 0.22s ease,
+    background 0.22s ease;
 }
 
 .services-list-item:hover .services-list-arrow {
-  transform: translate(4px,-2px);
+  transform: translate(4px, -2px);
   background: #eef3ff;
 }
-
 
 /* =========================================================
    BENEFITS
@@ -7631,9 +7351,9 @@ footer {
   max-width: 660px;
   margin: 12px 0 0;
   color: #081632;
-  font-size: clamp(36px,4vw,54px);
+  font-size: clamp(36px, 4vw, 54px);
   line-height: 1.07;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .services-benefit-heading > p {
@@ -7644,7 +7364,7 @@ footer {
 
 .services-benefit-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid #dce4ef;
   border-left: 1px solid #dce4ef;
 }
@@ -7679,14 +7399,13 @@ footer {
   line-height: 1.75;
 }
 
-
 /* =========================================================
    PROCESS
    ========================================================= */
 
 .services-process {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   border-top: 1px solid #dce4ef;
 }
 
@@ -7727,7 +7446,7 @@ footer {
   color: #1f5bff;
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 
 .services-process-item h3 {
@@ -7744,14 +7463,13 @@ footer {
   line-height: 1.75;
 }
 
-
 /* =========================================================
    INDUSTRIES
    ========================================================= */
 
 .services-industry-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
 
@@ -7767,15 +7485,15 @@ footer {
   color: inherit;
   text-decoration: none;
   transition:
-    transform .22s ease,
-    box-shadow .22s ease,
-    border-color .22s ease;
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
 }
 
 .services-industry-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(31,91,255,.38);
-  box-shadow: 0 15px 34px rgba(8,22,50,.08);
+  border-color: rgba(31, 91, 255, 0.38);
+  box-shadow: 0 15px 34px rgba(8, 22, 50, 0.08);
 }
 
 .services-industry-card span {
@@ -7797,24 +7515,19 @@ footer {
   font-size: 10px;
 }
 
-
 /* =========================================================
    ENGAGEMENT
    ========================================================= */
 
 .services-engagement {
   display: grid;
-  grid-template-columns: 1fr .8fr;
+  grid-template-columns: 1fr 0.8fr;
   gap: 70px;
   padding: 54px;
   border: 1px solid #dce4ef;
   border-radius: 24px;
   background:
-    radial-gradient(
-      circle at 95% 15%,
-      rgba(31,91,255,.10),
-      transparent 29%
-    ),
+    radial-gradient(circle at 95% 15%, rgba(31, 91, 255, 0.1), transparent 29%),
     #f7f9fd;
 }
 
@@ -7822,9 +7535,9 @@ footer {
   max-width: 650px;
   margin: 11px 0 15px;
   color: #081632;
-  font-size: clamp(35px,4vw,51px);
+  font-size: clamp(35px, 4vw, 51px);
   line-height: 1.08;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .services-engagement > div:first-child p {
@@ -7862,7 +7575,6 @@ footer {
   font-size: 14px;
 }
 
-
 /* =========================================================
    CTA
    ========================================================= */
@@ -7880,9 +7592,9 @@ footer {
 .services-final-copy h2 {
   margin: 11px 0 12px;
   color: #fff;
-  font-size: clamp(35px,4vw,52px);
+  font-size: clamp(35px, 4vw, 52px);
   line-height: 1.08;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .services-final-copy p {
@@ -7902,7 +7614,6 @@ footer {
 .services-final-actions .btn {
   text-align: center;
 }
-
 
 /* =========================================================
    FAQ
@@ -7944,13 +7655,11 @@ footer {
   font-weight: 700 !important;
 }
 
-
 /* =========================================================
    RESPONSIVE
    ========================================================= */
 
 @media (max-width: 1100px) {
-
   .services-hero-inner,
   .services-intro-grid,
   .services-benefit-heading,
@@ -7973,7 +7682,7 @@ footer {
   }
 
   .services-process {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .services-process-item:nth-child(2),
@@ -7981,12 +7690,12 @@ footer {
     border-right: 0;
   }
 
-  .services-process-item:nth-child(-n+4) {
+  .services-process-item:nth-child(-n + 4) {
     border-bottom: 1px solid #dce4ef;
   }
 
   .services-industry-grid {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .services-final-cta {
@@ -7998,9 +7707,7 @@ footer {
   }
 }
 
-
 @media (max-width: 760px) {
-
   .services-hero {
     min-height: auto;
   }
@@ -8065,9 +7772,7 @@ footer {
   }
 }
 
-
 @media (max-width: 500px) {
-
   .services-industry-grid {
     grid-template-columns: 1fr;
   }
@@ -8132,7 +7837,7 @@ footer {
 .service-process-card > span {
   font-size: 13px;
   font-weight: 700;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
 
 .service-benefit-card h3 {
@@ -8192,7 +7897,7 @@ footer {
   margin-top: 35px;
   margin-bottom: 10px;
   font-size: 11px;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   font-weight: 700;
 }
 
@@ -8295,9 +8000,7 @@ footer {
   color: #5f6b7a;
 }
 
-
 @media (max-width: 900px) {
-
   .service-detail-intro-grid,
   .service-detail-section-heading,
   .service-why-grid,
@@ -8321,12 +8024,9 @@ footer {
   .service-process-card:nth-child(2n) {
     border-right: 0;
   }
-
 }
 
-
 @media (max-width: 600px) {
-
   .service-detail-intro-grid,
   .service-detail-section-heading,
   .service-why-grid {
@@ -8369,7 +8069,6 @@ footer {
   .service-why-item {
     grid-template-columns: 40px 1fr;
   }
-
 }
 /* =========================================================
    HEADER - FINAL NAVIGATION POLISH
@@ -8377,19 +8076,15 @@ footer {
 
 /* Slightly shift the complete header content to the left */
 @media (min-width: 981px) {
-
   #hd .hb {
     transform: translateX(-18px);
   }
-
 }
-
 
 /* Clients navigation item */
 #hd #nv a.t {
   white-space: nowrap;
 }
-
 
 /* WhatsApp icon beside Contact Us */
 .header-whatsapp {
@@ -8406,17 +8101,16 @@ footer {
 
   border-radius: 50%;
 
-  background: #25D366;
+  background: #25d366;
   color: #ffffff;
 
   box-shadow: 0 6px 16px rgba(37, 211, 102, 0.22);
 
   transition:
-    transform .2s ease,
-    box-shadow .2s ease,
-    background .2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
-
 
 .header-whatsapp svg {
   width: 22px;
@@ -8427,24 +8121,20 @@ footer {
   fill: currentColor;
 }
 
-
 .header-whatsapp:hover {
   background: #20bd5a;
 
   transform: translateY(-2px) scale(1.04);
 
-  box-shadow: 0 9px 22px rgba(37, 211, 102, 0.30);
+  box-shadow: 0 9px 22px rgba(37, 211, 102, 0.3);
 }
-
 
 .header-whatsapp:active {
-  transform: scale(.96);
+  transform: scale(0.96);
 }
-
 
 /* Keep header balanced on smaller desktop screens */
 @media (max-width: 1100px) and (min-width: 981px) {
-
   #hd .hb {
     transform: translateX(-8px);
   }
@@ -8459,13 +8149,10 @@ footer {
     width: 20px;
     height: 20px;
   }
-
 }
-
 
 /* Mobile */
 @media (max-width: 980px) {
-
   #hd .hb {
     transform: none;
   }
@@ -8475,13 +8162,10 @@ footer {
     height: 40px;
     flex-basis: 40px;
   }
-
 }
-
 
 /* Very small screens */
 @media (max-width: 520px) {
-
   .header-whatsapp {
     width: 38px;
     height: 38px;
@@ -8492,7 +8176,6 @@ footer {
     width: 19px;
     height: 19px;
   }
-
 }
 /* =========================================================
    CLIENTS PAGE
@@ -8515,7 +8198,6 @@ footer {
   color: #64748b;
 }
 
-
 /* Logo Grid */
 
 .clients-logo-grid {
@@ -8523,7 +8205,6 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 
 .client-page-logo {
   min-height: 145px;
@@ -8543,11 +8224,10 @@ footer {
   box-shadow: 0 8px 30px rgba(11, 31, 75, 0.06);
 
   transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    border-color .25s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
-
 
 .client-page-logo img {
   max-width: 150px;
@@ -8561,10 +8241,9 @@ footer {
   filter: grayscale(10%);
 
   transition:
-    transform .25s ease,
-    filter .25s ease;
+    transform 0.25s ease,
+    filter 0.25s ease;
 }
-
 
 .client-page-logo:hover {
   transform: translateY(-6px);
@@ -8574,13 +8253,11 @@ footer {
   box-shadow: 0 16px 40px rgba(11, 31, 75, 0.11);
 }
 
-
 .client-page-logo:hover img {
   transform: scale(1.05);
 
   filter: grayscale(0%);
 }
-
 
 /* Bottom CTA */
 
@@ -8602,11 +8279,9 @@ footer {
   border-radius: 24px;
 }
 
-
 .clients-bottom-cta h2 {
   margin: 8px 0 8px;
 }
-
 
 .clients-bottom-cta p {
   margin: 0;
@@ -8616,33 +8291,26 @@ footer {
   line-height: 1.7;
 }
 
-
 /* Tablet */
 
 @media (max-width: 900px) {
-
   .clients-logo-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
-
 
 /* Mobile */
 
 @media (max-width: 640px) {
-
   .client-page-heading {
     margin-bottom: 35px;
   }
-
 
   .clients-logo-grid {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 12px;
   }
-
 
   .client-page-logo {
     min-height: 115px;
@@ -8652,12 +8320,10 @@ footer {
     border-radius: 14px;
   }
 
-
   .client-page-logo img {
     max-width: 115px;
     max-height: 50px;
   }
-
 
   .clients-bottom-cta {
     flex-direction: column;
@@ -8668,18 +8334,14 @@ footer {
 
     border-radius: 18px;
   }
-
 }
-
 
 /* Small mobile */
 
 @media (max-width: 400px) {
-
   .clients-logo-grid {
     grid-template-columns: 1fr;
   }
-
 }
 /* Clients - 1000+ Network */
 
@@ -8718,19 +8380,17 @@ footer {
   font-weight: 700;
 
   color: #64748b;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
 /* ================= CLIENTS HERO ================= */
 
 .clients-page-hero {
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(7, 27, 67, 0.95) 0%,
-      rgba(7, 27, 67, 0.78) 45%,
-      rgba(7, 27, 67, 0.35) 100%
-    ),
-    url("../images/clients-hero.jpg");
+  background-color: linear-gradient(
+    90deg,
+    rgba(7, 27, 67, 0.95) 0%,
+    rgba(7, 27, 67, 0.78) 45%,
+    rgba(7, 27, 67, 0.35) 100%
+  );
 
   background-size: cover;
   background-position: center;
@@ -8754,7 +8414,7 @@ footer {
       rgba(7, 27, 67, 0.96) 0%,
       rgba(7, 27, 67, 0.88) 38%,
       rgba(7, 27, 67, 0.48) 72%,
-      rgba(7, 27, 67, 0.30) 100%
+      rgba(7, 27, 67, 0.3) 100%
     ),
     url("../images/clients-hero.jpg");
 
@@ -8763,20 +8423,17 @@ footer {
   background-repeat: no-repeat;
 }
 
-
 .clients-hero-content {
   max-width: 700px;
 
   padding: 90px 0;
 }
 
-
 .clients-hero-content .eb {
   color: #f5a623;
 
   margin-bottom: 15px;
 }
-
 
 .clients-hero-content h1 {
   margin: 0 0 22px;
@@ -8790,26 +8447,23 @@ footer {
   letter-spacing: -0.04em;
 }
 
-
 .clients-hero-content h1 span {
   display: block;
 
   color: #f5a623;
 }
 
-
 .clients-hero-content p {
   max-width: 650px;
 
   margin: 0 0 28px;
 
-  color: rgba(255,255,255,.88);
+  color: rgba(255, 255, 255, 0.88);
 
   font-size: 18px;
 
   line-height: 1.75;
 }
-
 
 .clients-hero-content .clients-stat {
   display: inline-flex;
@@ -8826,9 +8480,8 @@ footer {
 
   border-radius: 999px;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
 
 .clients-hero-content .clients-stat strong {
   color: #f5a623;
@@ -8840,7 +8493,6 @@ footer {
   font-weight: 800;
 }
 
-
 .clients-hero-content .clients-stat span {
   color: #18243a;
 
@@ -8849,11 +8501,9 @@ footer {
   font-weight: 700;
 }
 
-
 /* Mobile */
 
 @media (max-width: 700px) {
-
   .clients-page-hero {
     min-height: 560px;
 
@@ -8871,7 +8521,6 @@ footer {
   .clients-hero-content p {
     font-size: 16px;
   }
-
 }
 /* ================= CLIENTS TOP HERO IMAGE ================= */
 
@@ -8882,7 +8531,7 @@ footer {
     linear-gradient(
       90deg,
       rgba(246, 248, 252, 0.97) 0%,
-      rgba(246, 248, 252, 0.90) 45%,
+      rgba(246, 248, 252, 0.9) 45%,
       rgba(246, 248, 252, 0.65) 100%
     ),
     url("../images/clients-hero.jpg");
@@ -8900,10 +8549,7 @@ footer {
   overflow: hidden;
 
   background-image:
-    linear-gradient(
-      rgba(246, 248, 252, 0.88),
-      rgba(246, 248, 252, 0.88)
-    ),
+    linear-gradient(rgba(246, 248, 252, 0.88), rgba(246, 248, 252, 0.88)),
     url("../images/clients-hero.jpg");
 
   background-size: cover;
@@ -8942,15 +8588,13 @@ footer {
   overflow: hidden;
   min-height: 470px;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(7, 24, 58, 0.97) 0%,
-      rgba(7, 24, 58, 0.88) 42%,
-      rgba(7, 24, 58, 0.55) 72%,
-      rgba(7, 24, 58, 0.30) 100%
-    ),
-    url("../images/clients-hero.jpg");
+  background: linear-gradient(
+    90deg,
+    rgba(7, 24, 58, 0.97) 0%,
+    rgba(7, 24, 58, 0.88) 42%,
+    rgba(7, 24, 58, 0.55) 72%,
+    rgba(7, 24, 58, 0.3) 100%
+  );
 
   background-size: cover;
   background-position: center;
@@ -8968,7 +8612,7 @@ footer {
   transform: translateY(-50%);
   border-radius: 50%;
 
-  background: rgba(255, 176, 32, 0.10);
+  background: rgba(255, 176, 32, 0.1);
   filter: blur(10px);
   pointer-events: none;
 }
@@ -9012,16 +8656,10 @@ footer {
 
 /* Mobile */
 @media (max-width: 700px) {
-
   #app > section:first-child {
     min-height: 520px;
 
-    background:
-      linear-gradient(
-        rgba(7, 24, 58, 0.82),
-        rgba(7, 24, 58, 0.92)
-      ),
-      url("../images/clients-hero.jpg");
+    background: linear-gradient(rgba(7, 24, 58, 0.82), rgba(7, 24, 58, 0.92));
 
     background-position: center;
   }
