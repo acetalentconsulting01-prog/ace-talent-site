@@ -564,17 +564,19 @@ function route() {
 
     const pageMap = {
 
-      about: "about",
+  about: "about",
 
-      "for-employers": "employers",
+  "for-employers": "employers",
 
-      "for-candidates": "candidates",
+  "for-candidates": "candidates",
 
-      contact: "contact",
+  clients: "clients",
 
-      "contact-us": "contact"
+  contact: "contact",
 
-    };
+  "contact-us": "contact"
+
+};
 
 
     const pageName =

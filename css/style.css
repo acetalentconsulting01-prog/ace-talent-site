@@ -8371,3 +8371,696 @@ footer {
   }
 
 }
+/* =========================================================
+   HEADER - FINAL NAVIGATION POLISH
+   ========================================================= */
+
+/* Slightly shift the complete header content to the left */
+@media (min-width: 981px) {
+
+  #hd .hb {
+    transform: translateX(-18px);
+  }
+
+}
+
+
+/* Clients navigation item */
+#hd #nv a.t {
+  white-space: nowrap;
+}
+
+
+/* WhatsApp icon beside Contact Us */
+.header-whatsapp {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 4px;
+
+  border-radius: 50%;
+
+  background: #25D366;
+  color: #ffffff;
+
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.22);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+
+.header-whatsapp svg {
+  width: 22px;
+  height: 22px;
+
+  display: block;
+
+  fill: currentColor;
+}
+
+
+.header-whatsapp:hover {
+  background: #20bd5a;
+
+  transform: translateY(-2px) scale(1.04);
+
+  box-shadow: 0 9px 22px rgba(37, 211, 102, 0.30);
+}
+
+
+.header-whatsapp:active {
+  transform: scale(.96);
+}
+
+
+/* Keep header balanced on smaller desktop screens */
+@media (max-width: 1100px) and (min-width: 981px) {
+
+  #hd .hb {
+    transform: translateX(-8px);
+  }
+
+  .header-whatsapp {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .header-whatsapp svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 980px) {
+
+  #hd .hb {
+    transform: none;
+  }
+
+  .header-whatsapp {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+}
+
+
+/* Very small screens */
+@media (max-width: 520px) {
+
+  .header-whatsapp {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .header-whatsapp svg {
+    width: 19px;
+    height: 19px;
+  }
+
+}
+/* =========================================================
+   CLIENTS PAGE
+   ========================================================= */
+
+.client-page-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.client-page-heading h2 {
+  margin: 10px 0 14px;
+}
+
+.client-page-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+
+/* Logo Grid */
+
+.clients-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.client-page-logo {
+  min-height: 145px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e8edf4;
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 30px rgba(11, 31, 75, 0.06);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+
+.client-page-logo img {
+  max-width: 150px;
+  max-height: 65px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  filter: grayscale(10%);
+
+  transition:
+    transform .25s ease,
+    filter .25s ease;
+}
+
+
+.client-page-logo:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(249, 168, 37, 0.45);
+
+  box-shadow: 0 16px 40px rgba(11, 31, 75, 0.11);
+}
+
+
+.client-page-logo:hover img {
+  transform: scale(1.05);
+
+  filter: grayscale(0%);
+}
+
+
+/* Bottom CTA */
+
+.clients-bottom-cta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 42px;
+
+  background: #fff8ee;
+
+  border: 1px solid #f3dfbd;
+
+  border-radius: 24px;
+}
+
+
+.clients-bottom-cta h2 {
+  margin: 8px 0 8px;
+}
+
+
+.clients-bottom-cta p {
+  margin: 0;
+
+  color: #64748b;
+
+  line-height: 1.7;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .clients-logo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 640px) {
+
+  .client-page-heading {
+    margin-bottom: 35px;
+  }
+
+
+  .clients-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .client-page-logo {
+    min-height: 115px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+  }
+
+
+  .client-page-logo img {
+    max-width: 115px;
+    max-height: 50px;
+  }
+
+
+  .clients-bottom-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 28px;
+
+    border-radius: 18px;
+  }
+
+}
+
+
+/* Small mobile */
+
+@media (max-width: 400px) {
+
+  .clients-logo-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* Clients - 1000+ Network */
+
+.clients-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 26px;
+  padding: 12px 20px;
+
+  background: #fff8ee;
+  border: 1px solid #f3dfbd;
+  border-radius: 999px;
+}
+
+.clients-stat strong {
+  font-size: 28px;
+  line-height: 1;
+  color: #f5a623;
+  font-weight: 800;
+}
+
+.clients-stat span {
+  font-size: 14px;
+  color: #18243a;
+  font-weight: 700;
+}
+
+.clients-logo-label {
+  margin-bottom: 22px;
+
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #64748b;
+  letter-spacing: .02em;
+}
+/* ================= CLIENTS HERO ================= */
+
+.clients-page-hero {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7, 27, 67, 0.95) 0%,
+      rgba(7, 27, 67, 0.78) 45%,
+      rgba(7, 27, 67, 0.35) 100%
+    ),
+    url("../images/clients-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ================= CLIENTS HERO ================= */
+
+.clients-page-hero {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7, 27, 67, 0.96) 0%,
+      rgba(7, 27, 67, 0.88) 38%,
+      rgba(7, 27, 67, 0.48) 72%,
+      rgba(7, 27, 67, 0.30) 100%
+    ),
+    url("../images/clients-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.clients-hero-content {
+  max-width: 700px;
+
+  padding: 90px 0;
+}
+
+
+.clients-hero-content .eb {
+  color: #f5a623;
+
+  margin-bottom: 15px;
+}
+
+
+.clients-hero-content h1 {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 5vw, 76px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.04em;
+}
+
+
+.clients-hero-content h1 span {
+  display: block;
+
+  color: #f5a623;
+}
+
+
+.clients-hero-content p {
+  max-width: 650px;
+
+  margin: 0 0 28px;
+
+  color: rgba(255,255,255,.88);
+
+  font-size: 18px;
+
+  line-height: 1.75;
+}
+
+
+.clients-hero-content .clients-stat {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 5px;
+
+  padding: 13px 22px;
+
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+
+.clients-hero-content .clients-stat strong {
+  color: #f5a623;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+.clients-hero-content .clients-stat span {
+  color: #18243a;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .clients-page-hero {
+    min-height: 560px;
+
+    background-position: 62% center;
+  }
+
+  .clients-hero-content {
+    padding: 70px 0;
+  }
+
+  .clients-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .clients-hero-content p {
+    font-size: 16px;
+  }
+
+}
+/* ================= CLIENTS TOP HERO IMAGE ================= */
+
+.clients-page-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(246, 248, 252, 0.97) 0%,
+      rgba(246, 248, 252, 0.90) 45%,
+      rgba(246, 248, 252, 0.65) 100%
+    ),
+    url("../images/clients-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* =========================================================
+   CLIENTS PAGE - FULL BACKGROUND IMAGE
+   ========================================================= */
+
+.clients-page-section {
+  position: relative;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      rgba(246, 248, 252, 0.88),
+      rgba(246, 248, 252, 0.88)
+    ),
+    url("../images/clients-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Keep content above the background */
+.clients-page-section .w {
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo cards stay clean and readable */
+.clients-page-section .client-page-logo {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Heading area */
+.clients-page-section .client-page-heading {
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo label */
+.clients-page-section .clients-logo-label {
+  position: relative;
+  z-index: 2;
+}
+/* =========================================================
+   CLIENTS PAGE - PREMIUM HERO
+   ========================================================= */
+
+#app > section:first-child {
+  position: relative;
+  overflow: hidden;
+  min-height: 470px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 24, 58, 0.97) 0%,
+      rgba(7, 24, 58, 0.88) 42%,
+      rgba(7, 24, 58, 0.55) 72%,
+      rgba(7, 24, 58, 0.30) 100%
+    ),
+    url("../images/clients-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Decorative glow */
+#app > section:first-child::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+
+  background: rgba(255, 176, 32, 0.10);
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+/* Hero content */
+#app > section:first-child .w {
+  position: relative;
+  z-index: 2;
+}
+
+/* Small heading */
+#app > section:first-child .eb {
+  color: #ffb020;
+  margin-bottom: 16px;
+}
+
+/* Main heading */
+#app > section:first-child h1 {
+  max-width: 720px;
+  margin: 0 0 22px;
+
+  color: #ffffff;
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+}
+
+/* Description */
+#app > section:first-child p {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* Button */
+#app > section:first-child .btn.b1 {
+  margin-top: 12px;
+  box-shadow: 0 12px 30px rgba(255, 176, 32, 0.25);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  #app > section:first-child {
+    min-height: 520px;
+
+    background:
+      linear-gradient(
+        rgba(7, 24, 58, 0.82),
+        rgba(7, 24, 58, 0.92)
+      ),
+      url("../images/clients-hero.jpg");
+
+    background-position: center;
+  }
+
+  #app > section:first-child h1 {
+    font-size: 46px;
+  }
+
+  #app > section:first-child p {
+    font-size: 16px;
+  }
+}
+/* =========================================================
+   CLIENT NETWORK SECTION - IMAGE BACKGROUND
+   ========================================================= */
+
+.clients-page-section {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(246, 248, 252, 0.94) 0%,
+      rgba(246, 248, 252, 0.86) 45%,
+      rgba(246, 248, 252, 0.68) 100%
+    ),
+    url("../images/clients-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clients-page-section .w {
+  position: relative;
+  z-index: 2;
+}
+
+.clients-page-section .client-page-logo {
+  background: rgba(255, 255, 255, 0.96);
+}

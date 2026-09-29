@@ -3906,7 +3906,172 @@ job: id => {
     </section>
 
   `,
+/* ================= CLIENTS ================= */
 
+clients: () => `
+
+ 
+
+  <section class="sec clients-page-section">
+
+    <div class="w">
+
+      <div class="client-page-heading">
+
+        <div class="eb">
+          OUR CLIENT NETWORK
+        </div>
+
+        <h2>
+          A Network of 1000+ Clients
+        </h2>
+
+        <p>
+          Over the years, we have supported 1000+ organizations with
+          recruitment, staffing and talent acquisition services across
+          multiple industries and business functions.
+        </p>
+
+        <div class="clients-stat">
+          <strong>1000+</strong>
+          <span>Clients Served</span>
+        </div>
+
+      </div>
+
+      <div class="clients-logo-label">
+        Some of the organizations we have worked with
+      </div>
+
+      <div class="clients-logo-grid">
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/ibm.png" alt="IBM">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/tech-mahindra.png" alt="Tech Mahindra">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/mahindra.png" alt="Mahindra">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/aditya-birla.png" alt="Aditya Birla">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/hcltech.png" alt="HCLTech">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/virtusa.png" alt="Virtusa">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/itc-infotech.png" alt="ITC Infotech">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/mphasis.png" alt="Mphasis">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/kotak-mahindra.png" alt="Kotak Mahindra Bank">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/godrej.png" alt="Godrej">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/ltimindtree.png" alt="LTIMindtree">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/flipkart.png" alt="Flipkart">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/wipro.png" alt="Wipro">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/birlasoft.png" alt="Birlasoft">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/icici-bank.png" alt="ICICI Bank">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/infosys.png" alt="Infosys">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/rbl-bank.png" alt="RBL Bank">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/capgemini.png" alt="Capgemini">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/cognizant.png" alt="Cognizant">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/indusland-bank.png" alt="IndusInd Bank">
+        </div>
+
+        <div class="client-page-logo">
+          <img src="images/client-logos/amazon.png" alt="Amazon">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="sec alt">
+
+    <div class="w">
+
+      <div class="clients-bottom-cta">
+
+        <div>
+
+          <div class="eb">
+            PARTNER WITH ACE
+          </div>
+
+          <h2>
+            Looking for a reliable recruitment partner?
+          </h2>
+
+          <p>
+            Tell us about your hiring requirements and our team
+            will connect with you.
+          </p>
+
+        </div>
+
+        <a
+          class="btn b1"
+          href="#/employers#req"
+        >
+          Submit Requirement
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+`,
 
   /* ================= CANDIDATES ================= */
 
